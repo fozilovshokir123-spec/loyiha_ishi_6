@@ -1,0 +1,1189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <header
+      class="py-[30px] bg-[url(./imgs/hederfon.png)] bg-blue-500 fixed w-full z-100"
+      data-aos="fade-down"
+    >
+      <div
+        class="max-w-[1200px] mx-auto px-[20px] flex justify-between items-center"
+      >
+        <a href=""><img src="./imgs/Link → logo-white.png.svg" alt="" /></a>
+
+        <!-- drawer init and show -->
+        <div class="text-center">
+          <button
+            class="inline-flex items-center justify-center text-white bg-brand box"
+            type="button"
+            data-drawer-target="drawer-navigation"
+            data-drawer-show="drawer-navigation"
+            aria-controls="drawer-navigation"
+          >
+            <img
+              src="./imgs/Symbol (4).svg"
+              alt=""
+              class="w-[30px] hidden max-[670px]:block"
+            />
+          </button>
+        </div>
+
+        <!-- drawer component -->
+        <div
+          id="drawer-navigation"
+          class="fixed bg-white top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-neutral-primary-soft w-80 border-e border-default"
+          tabindex="-1"
+          aria-labelledby="drawer-navigation-label"
+        >
+          <div class="border-b border-default pb-4 flex items-center">
+            <a
+              href="https://flowbite.com/"
+              class="flex items-center space-x-2 rtl:space-x-reverse"
+            >
+              <img
+                src="https://flowbite.com/docs/images/logo.svg"
+                class="h-6 w-6"
+                alt="Flowbite Logo"
+              />
+              <span
+                class="self-center text-lg font-semibold whitespace-nowrap text-heading"
+                >travel</span
+              >
+            </a>
+            <button
+              type="button"
+              data-drawer-hide="drawer-navigation"
+              aria-controls="drawer-navigation"
+              class="text-body bg-transparent hover:text-heading hover:bg-neutral-tertiary rounded-base w-9 h-9 absolute top-2.5 end-2.5 flex items-center justify-center"
+            >
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18 17.94 6M18 18 6.06 6"
+                />
+              </svg>
+              <span class="sr-only">Close menu</span>
+            </button>
+          </div>
+          <div class="py-5 overflow-y-auto">
+            <ul class="space-y-2 font-medium">
+              <li
+                class="bg-blue-900 p-[10px] text-[#ffffff] rounded-[10px] cursor-pointer hover:bg-black hover:text-[#ff8400]"
+              >
+                <a href="./index.html">Home</a>
+              </li>
+              <li
+                class="bg-blue-900 p-[10px] text-[white] rounded-[10px] cursor-pointer hover:bg-black hover:text-[#ff8400]"
+              >
+                <a href="./pejs/travel.html">Tarvel</a>
+              </li>
+              <li
+                class="bg-blue-900 p-[10px] text-[white] rounded-[10px] cursor-pointer hover:bg-black hover:text-[#ff8400]"
+              >
+                <a href="./pejs/shop.html">Shop</a>
+              </li>
+              <li
+                class="bg-blue-900 p-[10px] text-[white] rounded-[10px] cursor-pointer hover:bg-black hover:text-[#ff8400]"
+              >
+                <a href="./pejs/blog.html">blog</a>
+              </li>
+              <li
+                class="bg-blue-900 p-[10px] text-[white] rounded-[10px] cursor-pointer hover:bg-black hover:text-[#ff8400]"
+              >
+                <a href="./pejs/contact.html">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <ul class="flex items-center gap-[40px] max-[670px]:hidden">
+          <li>
+            <a
+              href="./index.html"
+              class="text-[white] text-[18px] hover:text-[#ff4d00] duration-300"
+              >Home :
+            </a>
+          </li>
+          <li>
+            <a
+              href="./pejs/travel.html"
+              class="text-[white] text-[18px] hover:text-[#ff4d00] duration-300"
+              >travel :</a
+            >
+          </li>
+          <li>
+            <a
+              href="./pejs/shop.html"
+              class="text-[white] text-[18px] hover:text-[#ff4d00] duration-300"
+              >Shop :</a
+            >
+          </li>
+          <li>
+            <a
+              href="./pejs/blog.html"
+              class="text-[white] text-[18px] hover:text-[#ff4d00] duration-300"
+              >blog :</a
+            >
+          </li>
+          <li>
+            <a
+              href="./pejs/contact.html"
+              class="text-[white] text-[18px] hover:text-[#ff4d00] duration-300"
+              >Contact us</a
+            >
+          </li>
+        </ul>
+        <div class="icon flex items-center gap-[30px] max-[670px]:hidden">
+          <img src="./imgs/Symbol (1).svg" alt="" />
+          <img src="imgs/Symbol (2).svg" alt="" />
+          <img src="./imgs/Symbol (3).svg" alt="" />
+        </div>
+      </div>
+    </header>
+    <main>
+<!-- 🎥 VIDEO FONLI SECTION -->
+<section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+  
+  <!-- Video element (To'liq fonni qoplaydi) -->
+  <video autoplay loop muted playsinline class="absolute z-10 w-auto min-w-full min-h-full max-w-none object-cover">
+    <source src="./mixkit-people-skiing-on-the-mountain-4016-hd-ready.mp4" type="video/mp4" />
+  </video>
+
+  <!-- Orqadagi qorli video ustidan qorong'iroq fon (Matnlar oson o'qilishi uchun) -->
+  <div class="absolute inset-0 bg-slate-950/40 z-20"></div>
+
+  <!-- Videoning ustidagi matnlar va tugmalar -->
+  <div class="relative z-30 text-center text-white px-4">
+    <h1 class="text-4xl md:text-6xl font-black tracking-wide uppercase mb-4" data-aos="zoom-in">Love Travel</h1>
+    <p class="text-lg md:text-xl max-w-md mx-auto mb-8 text-slate-200" data-aos="zoom-in">Explore the most breathtaking snowy mountains safely.</p>
+    <button class="px-8 py-3 bg-sky-500 hover:bg-sky-600 font-bold rounded-xl transition-all cursor-pointer" data-aos="zoom-in">Book a Trip</button>
+  </div>
+
+</section>
+
+
+
+
+   
+      <section class="py-[60px]">
+        <div class="max-w-[1200px] mx-auto px-[20px]">
+          <center data-aos="fade-down">
+            <p class="text-[#FD661E]">Dream Vacation Destination</p>
+            <br />
+            <p class="text-[43px] font-bold">
+              Plan the Trip of a Lifetime with Ease
+            </p>
+            <br />
+            <p>
+              Whether you're looking for a romantic getaway, a family-friendly
+              adventure, or a solo journey to explore the world,
+              <br />
+              a travel agency can provide you with a custom-tailored itinerary
+              that exceeds your expectations.
+            </p>
+            <br />
+
+            <!-- Modal toggle -->
+            <button
+              data-modal-target="default-modal"
+              data-modal-toggle="default-modal"
+              class="text-white shadow-lg shadow-blue-900 bg-blue-500 bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none"
+              type="button"
+            >
+              More info
+            </button>
+
+            <!-- Main modal -->
+          </center>
+          <br />
+          <br />
+          <div
+            class="cards grid grid-cols-3 gap-[40px] max-[1000px]:grid-cols-2 max-[600px]:grid-cols-1"
+          >
+            <div class="card">
+              <img src="./imgs/Section.svg" alt="" data-aos="fade-up" />
+            </div>
+            <div class="card">
+              <img src="./imgs/Section (2).svg" alt="" data-aos="zoom-in" />
+            </div>
+
+            <div class="card">
+              <img src="./imgs/Section (3).svg" alt="" data-aos="fade-down" />
+            </div>
+          </div>
+          <br />
+          <br />
+          <br />
+          <div
+            class="cards grid grid-cols-3 max-[1000px]:grid-cols-2 max-[600px]:grid-cols-1 gap-[30px]"
+          >
+            <div
+              class="card hover:scale-[1.1] duration-300 max-w-[350px] w-full p-[20px] rounded-[15px] hover:scale-[1.1] duration-300 shadow shadow-red-600"
+            >
+              <img src="./imgs/photos1.jpg" alt="" />
+              <br />
+              <p class="font-bold text-[20px]">Chiang Mai</p>
+
+              Thailand
+              <br />
+              <br />
+              Visit the temples and the Chiang Mai Night
+              <br />
+              Bazaar, a huge huge market located on
+              <br />
+              Chiang Klan Road.
+              <br />
+              <br />
+              <div class="flex items-center justify-between">
+                <div class="left">
+                  <button class="w-[110px] h-[35px] bg-[#FD661E] text-[white]">
+                    Details
+                  </button>
+                </div>
+                <div class="right">
+                  <p class="text-[12px]">From</p>
+                  <p class="text-[23px] font-bold">$ 490</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card hover:scale-[1.1] duration-300 max-w-[350px] w-full p-[20px] rounded-[15px] hover:scale-[1.1] duration-300 shadow shadow-red-600"
+            >
+              <img src="./imgs/photos2.png" alt="" />
+              <br />
+              <p class="font-bold text-[20px]">Chao Phraya</p>
+
+              Thailand
+              <br />
+              <br />
+              Boat tour in the capital of Thailand,
+              <br />
+              to see the beautiful palaces and
+              <br />
+              monuments from the water.
+              <br />
+              <br />
+              <div class="flex items-center justify-between">
+                <div class="left">
+                  <button class="w-[110px] h-[35px] bg-[#FD661E] text-[white]">
+                    Details
+                  </button>
+                </div>
+                <div class="right">
+                  <p class="text-[12px]">From</p>
+                  <p class="text-[23px] font-bold">$ 98</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card hover:scale-[1.1] duration-300 max-w-[350px] w-full p-[20px] rounded-[15px] hover:scale-[1.1] duration-300 shadow shadow-red-600"
+            >
+              <img src="./imgs/photos3.jpg" alt="" />
+              <br />
+              <p class="font-bold text-[20px]">Bangkok</p>
+
+              Thailand
+              <br />
+              <br />
+              Visit the temples and the Chiang Mai Night
+              <br />
+              Bazaar, a huge huge market located on
+              <br />
+              Chiang Klan Road.
+              <br />
+              <br />
+              <div class="flex items-center justify-between">
+                <div class="left">
+                  <button class="w-[110px] h-[35px] bg-[#1E92FD] text-[white]">
+                    Details
+                  </button>
+                </div>
+                <div class="right">
+                  <p class="text-[12px]">From</p>
+                  <p class="text-[23px] font-bold">$ 1000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="py-[60px] bg-[url(./imgs/photos4.jpg)] bg-center h-[600px]"
+      >
+        <div class="max-w-[1200px] mx-auto text-center">
+          <br />
+          <br />
+          <p class="text-[#FD661E]">Choose your Trip</p>
+          <br />
+          <p class="text-[41px] font-bold">Start your Vacation Now</p>
+          <br />
+          <p>
+            Looking for your dream vacation destination but don't know where to
+            start? With the
+            <br />
+            help of
+            <br />
+            <br />
+            experienced and knowledgeable travel agents, you can plan the trip
+            of a lifetime with ease.
+          </p>
+          <br />
+          <br />
+          <div
+            class="cards grid grid-cols-4 bg-[#FFFFFF] shadow shadow-blue-900 p-[20px] rounded-[15px] hover:scale-[1.1] duration-300 max-[1000px]:hidden"
+          >
+            <img src="./imgs/info1.svg" alt="" />
+            <img src="./imgs/info2.svg" alt="" />
+            <img src="./imgs/info3.svg" alt="" />
+            <button
+              class="w-[297px] bg-[#FD661E] text-[white] h-[50px] rounded-[15px] hover:scale-[1.1] duration-300"
+            >
+              SEARCH
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="py-[60px]">
+        <div class="max-w-[1200px] mx-auto px-[20px]">
+          <p class="text-[#FD661E]">Next Adventure</p>
+          <p class="text-[43px] font-bold">
+            Travel Destinations
+            <br />
+            Available Worldwide
+          </p>
+          <br />
+          <p>
+            We have compiled a list of top destinations across the globe,
+            scoured the world
+            <br />
+            for the most alluring and fascinating places to visit. From the
+            beautiful beaches
+            <br />
+            of the Caribbean to the majestic mountains of Europe and the vibrant
+            cities of
+            <br />
+            Asia, our destination list has something for everyone.
+          </p>
+          <br />
+          <br />
+          <br />
+          <br />
+
+          <div
+            class="grid grid-cols-4 gap-[40px] max-[900px]:grid-cols-3 max-[700px]:grid-cols-2 max-[500px]:grid-cols-1"
+          >
+            <div class="item">
+              <img src="./imgs/photos5.png" alt="" data-aos="fade-down" />
+            </div>
+            <div class="item">
+              <img src="./imgs/photos6.png" alt="" data-aos="fade-up" />
+            </div>
+            <div class="item">
+              <img src="./imgs/photos7.png" alt="" data-aos="fade-down" />
+            </div>
+            <div class="item">
+              <img src="./imgs/photos8.png" alt="" data-aos="fade-up" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-[60px] bg-[url(./imgs/photos3.jpg)]">
+        <div
+          class="max-w-[1200px] mx-auto px-[20px] grid-cols-2 grid gap-[50px] bg-center max-[1000px]:grid-cols-1"
+        >
+          <div class="left">
+            <div class="max-w-[600px]">
+              <div class="item max-w-[610px] w-full" data-aos="">
+                <div
+                  id="default-carousel"
+                  class="relative w-full"
+                  data-carousel="slide"
+                >
+                  <!-- Carousel wrapper -->
+                  <div
+                    class="relative h-56 overflow-hidden rounded-base md:h-96 max-w-[600px] w-full"
+                  >
+                    <!-- Item 1 -->
+                    <div
+                      class="hidden duration-700 ease-in-out"
+                      data-carousel-item
+                    >
+                      <img
+                        src="./imgs/photos1.jpg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        alt="..."
+                      />
+                    </div>
+                    <!-- Item 2 -->
+                    <div
+                      class="hidden duration-700 ease-in-out"
+                      data-carousel-item
+                    >
+                      <img
+                        src="./imgs/photos3.jpg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        alt="..."
+                      />
+                    </div>
+                    <!-- Item 3 -->
+                    <div
+                      class="hidden duration-700 ease-in-out"
+                      data-carousel-item
+                    >
+                      <img
+                        src="./imgs/photos2.png"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        alt="..."
+                      />
+                    </div>
+                    <!-- Item 4 -->
+                    <div
+                      class="hidden duration-700 ease-in-out"
+                      data-carousel-item
+                    >
+                      <img
+                        src="./imgs/photos2.png"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        alt="..."
+                      />
+                    </div>
+                    <!-- Item 5 -->
+                    <div
+                      class="hidden duration-700 ease-in-out"
+                      data-carousel-item
+                    >
+                      <img
+                        src="./imgs/photos1.jpg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                  <!-- Slider indicators -->
+                  <div
+                    class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
+                  ></div>
+                  <!-- Slider controls -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right" data-aos="fade">
+            <p class="">Adventure Travel</p>
+            <p class="text-[43px]">
+              Embrace the Thrill of
+              <br />
+              the Unknown
+            </p>
+            <p class="">
+              Are you tired of the typical tourist destinations and looking to
+              step out of
+              <br />
+              your comfort zone? Adventure travel may be the perfect solution
+              for you!
+              <br />
+              Here are four reasons why you should book an adventure travel
+              experience :
+            </p>
+            <br />
+            <p class="">✔ Connect with nature</p>
+            <p class="">✔ Experience other cultures</p>
+            <p class="">✔ Create unforgettable memories</p>
+            <br />
+            <button class="w-[200px] h-[40px] bg-[#FD661E] text-[white]">
+              All Services
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="py-[60px]">
+        <div class="max-w-[1200px] mx-auto px-[60px]">
+          <center>
+            <b class="text-[50px] text-[#181D4E]">Travel Itineraries</b>
+          </center>
+          <br />
+          <br />
+          <br />
+          <center>
+            <img-comparison-slider>
+              <img
+                class="w-[1200px] h-[600px]"
+                slot="first"
+                src="./imgs/photos1.jpg"
+              />
+              <img
+                class="w-[1200px] h-[600px]"
+                slot="second"
+                src="./imgs/photos3.jpg"
+              />
+            </img-comparison-slider>
+          </center>
+        </div>
+      </section>
+       <section class="relative bg-[url('./imgs/z.jpg')] bg-cover bg-center py-20 overflow-hidden font-sans">
+  <!-- Matnlar aniq o'qilishi uchun orqa fon ustidagi to'q qatlam (Overlay) -->
+  <div class="absolute inset-0 bg-gray-950/70 backdrop-blur-[2px]"></div>
+
+  <div class="relative z-10 max-w-[1200px] mx-auto px-5">
+    
+    <!-- Yuqori sarlavha va matn qismi -->
+    <div class="max-w-3xl mb-12">
+      <span class="text-xs font-bold uppercase tracking-widest text-[#ff8400] bg-orange-500/10 px-3 py-1 rounded-full inline-block">
+        Testimonials
+      </span>
+      <h2 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight mt-3">
+        Unforgettable Travel Experiences
+      </h2>
+      <p class="text-gray-300 text-sm md:text-base mt-4 leading-relaxed font-light">
+        Our customer's feedback is essential in building a great reputation and maintaining excellent service. By listening to our customer's needs, we can improve our offerings and provide an exceptional travel experience.
+      </p>
+    </div>
+
+    <!-- Ko'rkam va Oddiy Cardlar Panjarasi (Grid) -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      
+      <!-- 1-Karta: Jennifer and Mark -->
+      <div 
+        class="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-6 md:p-8 flex flex-col justify-between shadow-lg hover:bg-white/15 hover:border-orange-500/30 transition-all duration-300 min-h-[200px]"
+        data-aos="zoom-in"
+      >
+        <div>
+          <!-- Qo'shtirnoq belgisi -->
+          <span class="text-4xl text-[#ff8400] font-serif block leading-none select-none mb-2">“</span>
+          <p class="text-white text-base md:text-lg font-light leading-relaxed">
+            My husband and I have been using this travel agency for years and they have never disappointed us.
+          </p>
+        </div>
+        
+        <!-- Mijoz ma'lumoti -->
+        <div class="mt-8 pt-4 border-t border-white/10 flex justify-between items-center">
+          <div>
+            <h4 class="font-bold text-white text-base tracking-wide">Jennifer and Mark</h4>
+            <p class="text-xs text-gray-400 mt-0.5 flex items-center gap-1">📍 San Francisco</p>
+          </div>
+          <div class="flex text-orange-400 text-xs">⭐⭐⭐⭐⭐</div>
+        </div>
+      </div>
+
+      <!-- 2-Karta: David K. (Ism realroq qilindi) -->
+      <div 
+        class="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-6 md:p-8 flex flex-col justify-between shadow-lg hover:bg-white/15 hover:border-orange-500/30 transition-all duration-300 min-h-[200px]"
+        data-aos="zoom-in"
+      >
+        <div>
+          <span class="text-4xl text-[#ff8400] font-serif block leading-none select-none mb-2">“</span>
+          <p class="text-white text-base md:text-lg font-light leading-relaxed">
+            This travel agency made my dream trip to Europe a reality. They worked with me every step of the way to plan the itinerary.
+          </p>
+        </div>
+        
+        <!-- Mijoz ma'lumoti -->
+        <div class="mt-8 pt-4 border-t border-white/10 flex justify-between items-center">
+          <div>
+            <h4 class="font-bold text-white text-base tracking-wide">David K.</h4>
+            <p class="text-xs text-gray-400 mt-0.5 flex items-center gap-1">📍 London, UK</p>
+          </div>
+          <div class="flex text-orange-400 text-xs">⭐⭐⭐⭐⭐</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+        </section>
+
+        <section class="py-[60px]">
+        <div class="max-w-[1200px] mx-auto px-[20px]">
+          <center>
+            <p class="text-[#FD661E]">Clear Price</p>
+            <h1 class="text-[50px] font-bold text-[#181D4E]">
+              Affordable Travel Packages
+            </h1>
+            <br />
+            <p>
+              We believe that everyone deserves to experience their dream
+              vacation without breaking the bank.
+              <br />
+              That's why we offer a price section on our website that features a
+              range of affordable travel
+            </p>
+          </center>
+          <br />
+          <br />
+          <br />
+          <div
+            class="cards grid grid-cols-3 gap-[40px] max-[900px]:grid-cols-2 max-[600px]:grid-cols-1"
+          >
+            <div
+              class="card max-w-[400px] h-[500px] bg-[#EDF2F5] p-[40px] text-center rounded-[15px] hover:scale-[1.1] duration-300"
+            >
+              <p>Half Board</p>
+              <p class="text-[40px] font-bold">$ 50</p>
+              <br />
+              <p>
+                Transfers from Airport
+                <br />
+                <br />
+                Alcoholic beverages
+                <br />
+                <br />
+                Incl. Museum Tickets
+                <br />
+                <br />
+                Meals in Restaurants
+              </p>
+              <br />
+              <br />
+              <button
+                class="cursor-pointer w-[130px] h-[40px] bg-[#FD661E] text-[white] rounded-[5px]"
+              >
+                VIEW TRIPS
+              </button>
+            </div>
+            <div
+              class="card max-w-[400px] h-[500px] bg-[#FD661E] p-[40px] text-center rounded-[15px] hover:scale-[1.1] duration-300"
+            >
+              <p class="text-[white]">Half Board</p>
+              <p class="text-[white] text-[40px] font-bold">$ 32</p>
+              <br />
+              <p class="text-[white]">
+                Transfers from Airport
+                <br />
+                <br />
+                Alcoholic beverages
+                <br />
+                <br />
+                Incl. Museum Tickets
+                <br />
+                <br />
+                Meals in Restaurants
+              </p>
+              <br />
+              <br />
+              <button
+                class="cursor-pointer w-[130px] h-[40px] bg-[#1D1D54] text-[white] rounded-[5px]"
+              >
+                VIEW TRIPS
+              </button>
+            </div>
+            <div
+              class="card max-w-[400px] h-[500px] bg-[#1D1D54] p-[40px] text-center rounded-[15px] hover:scale-[1.1] duration-300 text-[white]"
+            >
+              <p>Half Board</p>
+              <p class="text-[40px] font-bold">$ 68</p>
+              <br />
+              <p>
+                Transfers from Airport
+                <br />
+                <br />
+                Alcoholic beverages
+                <br />
+                <br />
+                Incl. Museum Tickets
+                <br />
+                <br />
+                Meals in Restaurants
+              </p>
+              <br />
+              <br />
+              <button
+                class="cursor-pointer w-[130px] h-[40px] bg-[#FD661E] text-[white] rounded-[5px]"
+              >
+                VIEW TRIPS
+              </button>
+            </div>
+          </div>
+        </div>
+        </section>
+        <section class="py-[60px]">
+        <div
+          class="max-w-[1200px] mx-auto px-[20px] grid grid-cols-2 max-[1000px]:grid-cols-1 gap-[30px]"
+        >
+          <div>
+            <em class="text-[#FD661E]">Wandering Souls</em>
+            <br />
+            <p class="text-[40px] font-bold">
+              Discover Your Next
+              <br />
+              Adventure
+            </p>
+            <br />
+            <p>
+              Whether you're planning a romantic honeymoon or a family vacation,
+              our\
+              <br />
+              price section has got you covered. So, start browsing today and
+              find the
+              <br />
+              perfect vacation package at a price that won't leave you feeling
+              guilty.
+            </p>
+            <br />
+            <p>Organized Group Tour</p>
+            <input type="range" class="w-[300px]" />
+            <br />
+            <br />
+            <p>Single Customized Trip</p>
+            <input type="range" class="w-[300px]" />
+            <br />
+            <br />
+               <button
+              data-modal-target="default-modal"
+              data-modal-toggle="default-modal"
+              class="text-white shadow-lg shadow-blue-900 bg-blue-500 bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none"
+              type="button"
+            >
+              More info
+            </button>
+
+          </div>
+          <div class="">
+            <img src="./imgs/f.jpg" alt="" />
+          </div>
+        </div>
+        </section>
+      <section class="pt-[60px] pb-[30px]">
+        <div class="max-w-[1200px] mx-auto px-[20px]">
+          <center>
+            <em class="text-[#FD661E]">Roaming Tales</em>
+            <h1 class="text-[40px] text-[#181D4E] font-bold">Travel Blog</h1>
+            <p>
+              We share our experiences, tips and travel stories to inspire and
+              guide our readers in their own
+              <br />
+              wanderlust adventures. From hidden gems to popular destinations,
+              we showcase the beauty and
+              <br />
+              diversity of the world, and promote responsible and sustainable
+              travel.
+            </p>
+          </center>
+          <br />
+          <br />
+
+          <div class="flex max-[580px]:flex-col">
+            <div class="mb-4 border-default"></div>
+            <div id="default-styled-tab-content">
+              <div
+                class="hidden p-4 rounded-base bg-neutral-secondary-soft"
+                id="styled-profile"
+                role="tabpanel"
+                aria-labelledby="profile-tab"
+              >
+                <img
+                  src="./rasm/58ed808a790416aa458c0348bef3fa2766495ebb.jpg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="hidden p-4 rounded-base bg-neutral-secondary-soft"
+                id="styled-dashboard"
+                role="tabpanel"
+                aria-labelledby="dashboard-tab"
+              >
+                <img
+                  src="./rasm/6e66cb9fd2354da14064935e26857d65eee2cd08.jpg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="hidden p-4 rounded-base bg-neutral-secondary-soft"
+                id="styled-settings"
+                role="tabpanel"
+                aria-labelledby="settings-tab"
+              >
+                <img
+                  src="./rasm/d4650240d1b06de15e788bc686cd1203569cf020.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div>
+              <ul
+                class="-mb-px flex-col flex max-[520px]:flex-row text-sm font-medium text-center"
+                id="default-styled-tab"
+                data-tabs-toggle="#default-styled-tab-content"
+                data-tabs-active-classes="text-purple hover:text-purple border-purple"
+                data-tabs-inactive-classes="dark:border-transparent text-body hover:text-fg-brand border-default hover:border-brand"
+                role="tablist"
+              >
+                <li class="me-2" role="presentation">
+                  <button
+                    class="inline-block p-4 rounded-t-base"
+                    id="profile-styled-tab"
+                    data-tabs-target="#styled-profile"
+                    type="button"
+                    role="tab"
+                    aria-controls="profile"
+                    aria-selected="false"
+                  >
+                    <img
+                      src="./rasm/58ed808a790416aa458c0348bef3fa2766495ebb.jpg"
+                      alt=""
+                      class="w-[300px]"
+                    />
+                  </button>
+                </li>
+                <li class="me-2" role="presentation">
+                  <button
+                    class="inline-block p-4 border-b-2 rounded-t-base hover:text-fg-brand hover:border-brand"
+                    id="dashboard-styled-tab"
+                    data-tabs-target="#styled-dashboard"
+                    type="button"
+                    role="tab"
+                    aria-controls="dashboard"
+                    aria-selected="false"
+                  >
+                    <img
+                      src="./rasm/6e66cb9fd2354da14064935e26857d65eee2cd08.jpg"
+                      alt=""
+                      width="300px"
+                    />
+                  </button>
+                </li>
+                <li class="me-2" role="presentation">
+                  <button
+                    class="inline-block p-4 border-b-2 rounded-t-base hover:text-fg-brand hover:border-brand"
+                    id="settings-styled-tab"
+                    data-tabs-target="#styled-settings"
+                    type="button"
+                    role="tab"
+                    aria-controls="settings"
+                    aria-selected="false"
+                  >
+                    <img
+                      src="./rasm/d4650240d1b06de15e788bc686cd1203569cf020.jpg"
+                      alt=""
+                      width="300"
+                    />
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="">
+            <div class="left">
+              <p class="text-[32px] font-bold text-[#181D4E]">
+                Plan the Perfect Vacation
+              </p>
+              <br />
+              <p>
+                Planning a vacation can be overwhelming, but this post offers a
+                step-by-step
+                <br />
+                guide to help readers create a comprehensive travel itinerary.
+                From choosing a
+                <br />
+                destination to booking accommodations and activities, readers
+                will learn how
+                <br />
+                to plan a stress-free and enjoyable trip.
+              </p>
+              <br />
+              <button
+                class="bg-[#1E92FD] rounded-[15px] cursor-pointer1 text-[white] w-[200px] h-[40px]"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer
+        class="bg-slate-900 text-slate-300 font-sans mt-20 border-t border-slate-800"
+      >
+        <!-- Asosiy qism -->
+        <div
+          class="max-w-7xl mx-auto px-4 py-12 md:py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8"
+        >
+          <!-- 1-Ustun: Loyiha haqida -->
+          <div class="lg:col-span-2">
+            <div
+              class="flex items-center gap-2 text-white text-2xl font-black tracking-tight mb-4"
+            >
+              <span>❄️</span> Travelsnow
+            </div>
+            <p class="text-sm text-slate-400 max-w-sm leading-relaxed mb-6">
+              Your ultimate winter travel companion. Discover top ski resorts,
+              find travel buddies, and plan unforgettable snowy adventures
+              worldwide.
+            </p>
+            <!-- Ijtimoiy tarmoqlar -->
+            <div class="flex gap-4">
+              <a
+                href="#"
+                class="w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center hover:bg-sky-500 hover:text-white transition-colors duration-200"
+                aria-label="Instagram"
+              >
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center hover:bg-sky-500 hover:text-white transition-colors duration-200"
+                aria-label="Telegram"
+              >
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                  <path
+                    d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.46c.536-.196 1.006.128.832.941z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center hover:bg-sky-500 hover:text-white transition-colors duration-200"
+                aria-label="YouTube"
+              >
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                  <path
+                    d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.11C19.517 3.545 12 3.545 12 3.545s-7.517 0-9.388.508a3.003 3.003 0 0 0-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 0 0 2.11 2.11c1.871.508 9.388.508 9.388.508s7.517 0 9.388-.508a3.003 3.003 0 0 0 2.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- 2-Ustun: Tezkor havolalar -->
+          <div>
+            <h3
+              class="text-white text-sm font-bold uppercase tracking-wider mb-4"
+            >
+              Explore
+            </h3>
+            <ul class="space-y-2.5 text-sm">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-sky-400 transition-colors duration-200"
+                  >Ski Resorts</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-sky-400 transition-colors duration-200"
+                  >Travel Guides</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-sky-400 transition-colors duration-200"
+                  >Snow Reports</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-sky-400 transition-colors duration-200"
+                  >Budget Estimator</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- 3-Ustun: Kompaniya/Loyiha -->
+          <div>
+            <h3
+              class="text-white text-sm font-bold uppercase tracking-wider mb-4"
+            >
+              Community
+            </h3>
+            <ul class="space-y-2.5 text-sm">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-sky-400 transition-colors duration-200"
+                  >Find a Buddy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-sky-400 transition-colors duration-200"
+                  >Shared Trips</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-sky-400 transition-colors duration-200"
+                  >Member Forums</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-sky-400 transition-colors duration-200"
+                  >Support & FAQ</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- 4-Ustun: Obuna formasi (Newsletter) -->
+          <div>
+            <h3
+              class="text-white text-sm font-bold uppercase tracking-wider mb-4"
+            >
+              Stay Tuned
+            </h3>
+            <p class="text-xs text-slate-400 mb-3 leading-relaxed">
+              Subscribe to get the latest snow alerts and exclusive winter tour
+              deals.
+            </p>
+            <form class="flex flex-col gap-2">
+              <input
+                type="email"
+                placeholder="Your email address"
+                class="w-full px-3 py-2 text-sm bg-slate-800 text-slate-200 rounded-lg border border-slate-700 focus:outline-none focus:border-sky-500 transition-colors placeholder:text-slate-500"
+                required
+              />
+              <button
+                type="submit"
+                class="w-full bg-sky-600 hover:bg-sky-500 text-white font-semibold text-sm py-2 rounded-lg transition-colors duration-200 shadow-md shadow-sky-600/10"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Pastki chiziq (Copyright) -->
+        <div class="border-t border-slate-800/60 bg-slate-950/40 py-6">
+          <div
+            class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500"
+          >
+            <div>
+              &copy; 2026 Travelsnow. All rights reserved. Built with passion
+              for winter adventures.
+            </div>
+            <div class="flex gap-6">
+              <a href="#" class="hover:text-slate-400 transition-colors"
+                >Privacy Policy</a
+              >
+              <a href="#" class="hover:text-slate-400 transition-colors"
+                >Terms of Service</a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- Chat tugmasi -->
+      <div
+        id="default-modal"
+        tabindex="-1"
+        aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+      >
+        <div class="relative p-4 w-full max-w-2xl max-h-full">
+          <!-- Modal content -->
+          <div
+            class="relative bg-white bg-neutral-primary-soft border border-default rounded-base shadow-sm p-4 md:p-6"
+          >
+            <!-- Modal header -->
+            <div
+              class="flex  items-center justify-between border-b border-default pb-4 md:pb-5"
+            >
+              <h3 class="text-lg font-medium text-heading">Terms of Service</h3>
+              <button
+                type="button"
+                class="text-body bg-transparent hover:bg-neutral-tertiary hover:text-heading rounded-base text-sm w-9 h-9 ms-auto inline-flex justify-center items-center"
+                data-modal-hide="default-modal"
+              >
+                <svg
+                  class="w-5 h-5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18 17.94 6M18 18 6.06 6"
+                  />
+                </svg>
+                <span class="sr-only">Close modal</span>
+              </button>
+            </div>
+            <!-- Modal body -->
+            <div class="space-y-4 md:space-y-6 py-4 md:py-6">
+              <iframe class="w-full" height="527" src="https://www.youtube.com/embed/2r-EhcedduQ" title="[4K]🇺🇸White Christmas in New York City🎄☃️ First Big SNOWFALL in NYC❄️NYC Winter Wonderland, Dec 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <p class="leading-relaxed text-body">
+              Preparation: Always check weather and avalanche alerts, pack essential GPS or radio tools, and inform others of your exact mountain route before departing.Driving: Equip your vehicle with winter tires and snow chains, maintain low speeds on black. 
+              </p>
+    
+            </div>
+            <!-- Modal footer -->
+            <div
+              class="flex items-center border-t border-default space-x-4 pt-4 md:pt-5"
+            >
+              <button
+                data-modal-hide="default-modal"
+                type="button"
+                class="text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none"
+              >
+                I accept
+              </button>
+              <button
+                data-modal-hide="default-modal"
+                type="button"
+                class="text-body bg-neutral-secondary-medium box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading focus:ring-4 focus:ring-neutral-tertiary shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none"
+              >
+                Decline
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Chat oynasi -->
+    </main>
+  </body>
+  <script src="https://cdn.jotfor.ms/agent/embedjs/019eac407cd57a39911e6816ecb9609b4db1/embed.js"></script>
+  <script src="https://unpkg.com/img-comparison-slider@8/dist/index.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 3000,
+    });
+  </script>
+  <script src="./inde.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+    integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+</html>

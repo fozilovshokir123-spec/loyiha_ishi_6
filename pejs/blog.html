@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <header class="py-[30px] bg-[url(../imgs/hederfon.png)] bg-blue-500  fixed w-full z-1000" data-aos="fade-down">
+        <div class="max-w-[1200px] mx-auto px-[20px] flex justify-between items-center">
+          
+            
+<a href=""><img src="../imgs/Link → logo-white.png.svg" alt=""></a>
+
+            
+            <!-- drawer init and show -->
+<div class="text-center">
+   <button class="inline-flex items-center justify-center text-white bg-brand box" type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation" aria-controls="drawer-navigation">
+   <img src="../imgs/Symbol (4).svg" alt="" class="w-[30px] hidden max-[670px]:block" >
+   </button>
+</div>
+
+<!-- drawer component -->
+<div id="drawer-navigation" class="fixed bg-white top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-neutral-primary-soft w-80 border-e border-default" tabindex="-1" aria-labelledby="drawer-navigation-label">
+   <div class="border-b border-default pb-4 flex items-center">
+      <a href="https://flowbite.com/" class="flex items-center space-x-2 rtl:space-x-reverse">
+         <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 w-6" alt="Flowbite Logo" />
+         <span class="self-center text-lg font-semibold whitespace-nowrap text-heading">love travel</span>
+      </a>
+      <button type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation" class="text-body bg-transparent hover:text-heading hover:bg-neutral-tertiary rounded-base w-9 h-9 absolute top-2.5 end-2.5 flex items-center justify-center">
+         <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6"/></svg>
+         <span class="sr-only">Close menu</span>
+      </button>
+   </div>
+  <div class="py-5 overflow-y-auto">
+      <ul class="space-y-2 font-medium">
+        <li class="bg-blue-900 p-[10px] text-[#ffffff] rounded-[10px] cursor-pointer hover:bg-black hover:text-[#ff8400]">
+            <a href="../index.html">Home</a>
+        </li>
+        <li class="bg-blue-900 p-[10px] text-[white] rounded-[10px] cursor-pointer hover:bg-black hover:text-[#ff8400]">
+            <a href="./travel.html">Tarvel</a>
+        </li>
+        <li class="bg-blue-900 p-[10px] text-[white] rounded-[10px] cursor-pointer hover:bg-black hover:text-[#ff8400]">
+            <a href="./shop.html">Shop</a>
+        </li>
+        <li class="bg-blue-900 p-[10px] text-[white] rounded-[10px] cursor-pointer hover:bg-black hover:text-[#ff8400]">
+            <a href="./blog.html">Blog</a>
+        </li>
+        <li class="bg-blue-900 p-[10px] text-[white] rounded-[10px] cursor-pointer hover:bg-black hover:text-[#ff8400]">
+            <a href="./contact.html">Contact us</a>
+        </li>
+      </ul>
+   </div>
+</div>
+
+            <ul class="flex items-center gap-[40px] max-[670px]:hidden">
+                <li>
+                    <a href= "../index.html" class="text-[white] text-[18px] hover:text-[#ff4d00]  duration-300 ">Home : </a>
+                </li>
+                <li>
+                    <a href= "./travel.html" class="text-[white] text-[18px] hover:text-[#ff4d00] duration-300  ">travel :</a>
+                </li>
+                <li>
+                    <a href= "./shop.html" class="text-[white] text-[18px] hover:text-[#ff4d00] duration-300  ">Shop :</a>
+                </li>
+                <li>
+                    <a href= "./blog.html" class="text-[white] text-[18px] hover:text-[#ff4d00] duration-300  ">Blog :</a>
+                </li>
+                <li>
+                    <a href= "./contact.html" class="text-[white] text-[18px] hover:text-[#ff4d00] duration-300  ">Contact us</a>
+                </li>
+            </ul>
+            <div class="icon flex items-center gap-[30px] max-[670px]:hidden ">
+                <img src="../imgs/Symbol (1).svg" alt="">
+                <img src="../imgs/Symbol (2).svg" alt="">
+                <img src="../imgs/Symbol (3).svg" alt="">
+            </div>
+        </div>
+    </header>
+<section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+  
+  <!-- Video element (To'liq fonni qoplaydi) -->
+  <video autoplay loop muted playsinline class="absolute z-10 w-auto min-w-full min-h-full max-w-none object-cover">
+    <source src="./mixkit-chairs-of-a-cable-car-in-a-canadian-forest-3363-hd-ready.mp4" type="video/mp4" />
+  </video>
+
+  <!-- Orqadagi qorli video ustidan qorong'iroq fon (Matnlar oson o'qilishi uchun) -->
+  <div class="absolute inset-0 bg-slate-950/40 z-20"></div>
+
+  <!-- Videoning ustidagi matnlar va tugmalar -->
+  <div class="relative z-30 text-center text-white px-4">
+    <h1 class="text-4xl md:text-6xl font-black tracking-wide uppercase mb-4" data-aos="zoom-in">Welcome to the blog page.</h1>
+    <p class="text-lg md:text-xl max-w-md mx-auto mb-8 text-slate-200" data-aos="zoom-in">Explore the most breathtaking snowy mountains safely.</p>
+    <button class="px-8 py-3 bg-sky-500 hover:bg-sky-600 font-bold rounded-xl transition-all cursor-pointer" data-aos="zoom-in">Book a Trip</button>
+  </div>
+
+</section>
+
+    <section class="py-[60px]">
+        <p class="text-[#ff9100] text-center"><em>With all Previews</em></p>
+        <p class="text-[40px] font-bold text-center">Carousel Solutions</p>
+        <br>
+        <br>
+        <br>
+        <div class="max-w-[1200px] mx-auto px-[20px">
+            <div class="owl-carousel owl-theme  ">
+    <div class="item">
+          <div
+            class="card max-w-[500px] w-full p-[20px] rounded-[10px] shadow-lg shadow-black/30 hover:scale-[1.1] duration-300 hover:shadow-[#0000ff]"
+          >
+            <img
+              src="../rasm/58ed808a790416aa458c0348bef3fa2766495ebb.jpg"
+              alt=""
+            />
+            <br />
+            <h1 class="text-[20px] font-bold">Chiang Mai</h1>
+            <br />
+            <p>
+              Visit the temples and the Chiang Mai Night Bazaar, a huge huge
+              market located on Chiang Klan Road.
+            </p>
+            <br /><br />
+            <div class="flex items-center justify-between">
+              <p class="text-[18px] font-bold">$ 490</p>
+              <button
+                class="w-[110px] h-[44px] bg-[#FD661E] text-[white] rounded-[10px]"
+              >
+                Details
+              </button>
+            </div>
+          </div>
+    </div>
+    <div class="item">
+         <div
+            class="card max-w-[500px] w-full p-[20px] rounded-[10px] shadow-lg shadow-black/30 hover:scale-[1.1] duration-300 hover:shadow-[blue]"
+          >
+            <img src="../imgs/photos2.png" alt="" />
+            <br />
+            <h1 class="text-[20px] font-bold">Chao Phraya</h1>
+            <br />
+            <p>
+              Marvelous culinary and cultural trip to the Thai capital with its
+              wonderful monuments and Buddha statues.
+            </p>
+            <br /><br />
+            <div class="flex items-center justify-between">
+              <p class="font-bold text-[18px]">$ 98</p>
+              <button
+                class="w-[110px] h-[44px] bg-[#FD661E] text-[white] rounded-[10px]"
+              >
+                Details
+              </button>
+            </div>
+          </div>
+    </div>
+ <div class="item">
+           <div
+            class="card max-w-[500px] w-full p-[20px] rounded-[10px] shadow-lg shadow-black/30 hover:scale-[1.1] duration-300 hover:shadow-[blue]"
+          >
+            <img
+              src="../rasm/5b078625e70300161acb68964dfdc5ab5386cfc3.jpg"
+              alt=""
+            />
+            <br />
+            <h1 class="text-[20px] font-bold">Bangkok</h1>
+            <br />
+            <p>
+              Boat tour in the capital of Thailand, Bangkok, to see the
+              beautiful palaces and monuments from the water.
+            </p>
+            <br /><br />
+            <div class="flex items-center justify-between">
+              <p class="text-[18px] font-bold">$ 1000</p>
+              <button
+                class="w-[110px] h-[44px] bg-[#FD661E] text-[white] rounded-[10px]"
+              >
+                Details
+              </button>
+            </div>
+          </div>
+ </div>
+
+        </div>
+    </section>
+   <br>
+   <div class="w-full max-w-7xl mx-auto px-6 py-16 font-sans selection:bg-sky-100 selection:text-sky-900">
+  
+  <!-- Kichik Sub-sarlavha -->
+  <div class="text-xs font-bold text-sky-600 uppercase tracking-widest mb-2">Discover Travelsnow</div>
+  
+  <!-- Asosiy Sarlavha -->
+  <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mb-12 tracking-tight">
+    Explore Our Blog Categories
+  </h2>
+  
+  <!-- Professional Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
+    
+    <!-- Karta 1: Destinations -->
+    <div class="group relative bg-slate-50 rounded-2xl p-8 border border-slate-200/60 hover:bg-white hover:shadow-2xl hover:shadow-slate-200/80 hover:border-sky-500 transition-all duration-300 flex flex-col justify-between h-full">
+      <div>
+        <!-- Belgi uchun Chiroyli Doira -->
+        <div class="w-12 h-12 rounded-xl bg-sky-50 border border-sky-100 flex items-center justify-center text-2xl mb-6 group-hover:bg-sky-500 group-hover:text-white transition-all duration-300">
+          🏔️
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 mb-3 tracking-tight">Destinations & Guides</h3>
+        <p class="text-sm text-slate-500 leading-relaxed mb-8">Explore top winter resorts, hidden snowy gems, and find comprehensive travel itineraries.</p>
+      </div>
+      <!-- Premium Tugma -->
+      <a href="#" class="inline-flex items-center gap-2 text-sm font-bold text-slate-900 group-hover:text-sky-600 transition-colors mt-auto">
+        Read More 
+        <svg class="w-4 h-4 transform group-hover:translate-x-1.5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Karta 2: Tips & Hacks -->
+    <div class="group relative bg-slate-50 rounded-2xl p-8 border border-slate-200/60 hover:bg-white hover:shadow-2xl hover:shadow-slate-200/80 hover:border-sky-500 transition-all duration-300 flex flex-col justify-between h-full">
+      <div>
+        <div class="w-12 h-12 rounded-xl bg-sky-50 border border-sky-100 flex items-center justify-center text-2xl mb-6 group-hover:bg-sky-500 group-hover:text-white transition-all duration-300">
+          🎒
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 mb-3 tracking-tight">Tips & Hacks</h3>
+        <p class="text-sm text-slate-500 leading-relaxed mb-8">Expert advice on layering clothes for freezing weather, gear rentals, and winter safety rules.</p>
+      </div>
+      <a href="#" class="inline-flex items-center gap-2 text-sm font-bold text-slate-900 group-hover:text-sky-600 transition-colors mt-auto">
+        Read More 
+        <svg class="w-4 h-4 transform group-hover:translate-x-1.5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Karta 3: Checklists -->
+    <div class="group relative bg-slate-50 rounded-2xl p-8 border border-slate-200/60 hover:bg-white hover:shadow-2xl hover:shadow-slate-200/80 hover:border-sky-500 transition-all duration-300 flex flex-col justify-between h-full">
+      <div>
+        <div class="w-12 h-12 rounded-xl bg-sky-50 border border-sky-100 flex items-center justify-center text-2xl mb-6 group-hover:bg-sky-500 group-hover:text-white transition-all duration-300">
+          📋
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 mb-3 tracking-tight">Travel Checklists</h3>
+        <p class="text-sm text-slate-500 leading-relaxed mb-8">Essential packing lists and must-have gear before heading out into the cold snow.</p>
+      </div>
+      <a href="#" class="inline-flex items-center gap-2 text-sm font-bold text-slate-900 group-hover:text-sky-600 transition-colors mt-auto">
+        Read More 
+        <svg class="w-4 h-4 transform group-hover:translate-x-1.5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Karta 4: Calendar -->
+    <div class="group relative bg-slate-50 rounded-2xl p-8 border border-slate-200/60 hover:bg-white hover:shadow-2xl hover:shadow-slate-200/80 hover:border-sky-500 transition-all duration-300 flex flex-col justify-between h-full">
+      <div>
+        <div class="w-12 h-12 rounded-xl bg-sky-50 border border-sky-100 flex items-center justify-center text-2xl mb-6 group-hover:bg-sky-500 group-hover:text-white transition-all duration-300">
+          ❄️
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 mb-3 tracking-tight">Seasonal Calendar</h3>
+        <p class="text-sm text-slate-500 leading-relaxed mb-8">An interactive breakdown of the best months to visit specific winter destinations worldwide.</p>
+      </div>
+      <a href="#" class="inline-flex items-center gap-2 text-sm font-bold text-slate-900 group-hover:text-sky-600 transition-colors mt-auto">
+        Read More 
+        <svg class="w-4 h-4 transform group-hover:translate-x-1.5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path>
+        </svg>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<div class="max-w-6xl mx-auto px-4 py-12 font-sans">
+  
+  <!-- Sarlavha -->
+  <h2 class="text-2xl font-bold text-gray-800 mb-2">Estimated Trip Prices</h2>
+  <p class="text-sm text-gray-500 mb-8">Average daily costs for winter destinations (per person)</p>
+  
+  <!-- Narxlar Gridi (3 ta ustun) -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    
+    <!-- 1. Byudjet Variant (Ekonom) -->
+    <div class="bg-white rounded-lg p-6 border border-gray-200 shadow-sm flex flex-col justify-between">
+      <div>
+        <div class="text-xs font-bold text-green-600 uppercase tracking-wider mb-2">Budget Option</div>
+        <div class="text-3xl font-extrabold text-gray-900 mb-4">$30 - $50 <span class="text-sm font-normal text-gray-500">/ day</span></div>
+        <p class="text-sm text-gray-600 mb-4">Perfect for backpackers and local trips.</p>
+        
+        <!-- Xizmatlar ro'yxati -->
+        <ul class="text-sm text-gray-500 space-y-2 mb-6">
+          <li>• Hostel or budget guest house</li>
+          <li>• Local public transport</li>
+          <li>• Affordable local cafes</li>
+        </ul>
+      </div>
+      <button class="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 text-sm font-semibold py-2 rounded-md transition-colors">Choose Budget</button>
+    </div>
+
+    <!-- 2. Standart Variant (Ommabop) -->
+    <div class="bg-white rounded-lg p-6 border-2 border-blue-500 shadow-sm flex flex-col justify-between relative">
+      <!-- Eng ommabop tegi -->
+      <span class="absolute -top-3 left-6 bg-blue-500 text-white text-xs font-bold px-2.5 py-0.5 rounded-full">Most Popular</span>
+      
+      <div>
+        <div class="text-xs font-bold text-blue-600 uppercase tracking-wider mb-2 mt-1">Standard Option</div>
+        <div class="text-3xl font-extrabold text-gray-900 mb-4">$80 - $120 <span class="text-sm font-normal text-gray-500">/ day</span></div>
+        <p class="text-sm text-gray-600 mb-4">Best balance between comfort and cost.</p>
+        
+        <ul class="text-sm text-gray-500 space-y-2 mb-6">
+          <li>• 3-star hotel or cozy cabin</li>
+          <li>• Standard ski equipment rental</li>
+          <li>• Restaurant meals and skipass</li>
+        </ul>
+      </div>
+      <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold py-2 rounded-md transition-colors">Choose Standard</button>
+    </div>
+
+    <!-- 3. Premium Variant (Lyuks) -->
+    <div class="bg-white rounded-lg p-6 border border-gray-200 shadow-sm flex flex-col justify-between">
+      <div>
+        <div class="text-xs font-bold text-purple-600 uppercase tracking-wider mb-2">Luxury Option</div>
+        <div class="text-3xl font-extrabold text-gray-900 mb-4">$250+ <span class="text-sm font-normal text-gray-500">/ day</span></div>
+        <p class="text-sm text-gray-600 mb-4">For ultimate comfort and premium experience.</p>
+        
+        <ul class="text-sm text-gray-500 space-y-2 mb-6">
+          <li>• 5-star ski resort hotel</li>
+          <li>• Top-tier professional gear</li>
+          <li>• Private guide and fine dining</li>
+        </ul>
+      </div>
+      <button class="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 text-sm font-semibold py-2 rounded-md transition-colors">Choose Luxury</button>
+    </div>
+
+  </div>
+</div>
+
+  
+<footer class="bg-slate-900 text-slate-300 font-sans mt-20 border-t border-slate-800">
+  <!-- Asosiy qism -->
+  <div class="max-w-7xl mx-auto px-4 py-12 md:py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+    
+    <!-- 1-Ustun: Loyiha haqida -->
+    <div class="lg:col-span-2">
+      <div class="flex items-center gap-2 text-white text-2xl font-black tracking-tight mb-4">
+        <span>❄️</span> Travelsnow
+      </div>
+      <p class="text-sm text-slate-400 max-w-sm leading-relaxed mb-6">
+        Your ultimate winter travel companion. Discover top ski resorts, find travel buddies, and plan unforgettable snowy adventures worldwide.
+      </p>
+      <!-- Ijtimoiy tarmoqlar -->
+      <div class="flex gap-4">
+        <a href="#" class="w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center hover:bg-sky-500 hover:text-white transition-colors duration-200" aria-label="Instagram">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a href="#" class="w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center hover:bg-sky-500 hover:text-white transition-colors duration-200" aria-label="Telegram">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.46c.536-.196 1.006.128.832.941z"/></svg>
+        </a>
+        <a href="#" class="w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center hover:bg-sky-500 hover:text-white transition-colors duration-200" aria-label="YouTube">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.11C19.517 3.545 12 3.545 12 3.545s-7.517 0-9.388.508a3.003 3.003 0 0 0-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 0 0 2.11 2.11c1.871.508 9.388.508 9.388.508s7.517 0 9.388-.508a3.003 3.003 0 0 0 2.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- 2-Ustun: Tezkor havolalar -->
+    <div>
+      <h3 class="text-white text-sm font-bold uppercase tracking-wider mb-4">Explore</h3>
+      <ul class="space-y-2.5 text-sm">
+        <li><a href="#" class="hover:text-sky-400 transition-colors duration-200">Ski Resorts</a></li>
+        <li><a href="#" class="hover:text-sky-400 transition-colors duration-200">Travel Guides</a></li>
+        <li><a href="#" class="hover:text-sky-400 transition-colors duration-200">Snow Reports</a></li>
+        <li><a href="#" class="hover:text-sky-400 transition-colors duration-200">Budget Estimator</a></li>
+      </ul>
+    </div>
+
+    <!-- 3-Ustun: Kompaniya/Loyiha -->
+    <div>
+      <h3 class="text-white text-sm font-bold uppercase tracking-wider mb-4">Community</h3>
+      <ul class="space-y-2.5 text-sm">
+        <li><a href="#" class="hover:text-sky-400 transition-colors duration-200">Find a Buddy</a></li>
+        <li><a href="#" class="hover:text-sky-400 transition-colors duration-200">Shared Trips</a></li>
+        <li><a href="#" class="hover:text-sky-400 transition-colors duration-200">Member Forums</a></li>
+        <li><a href="#" class="hover:text-sky-400 transition-colors duration-200">Support & FAQ</a></li>
+      </ul>
+    </div>
+
+    <!-- 4-Ustun: Obuna formasi (Newsletter) -->
+    <div>
+      <h3 class="text-white text-sm font-bold uppercase tracking-wider mb-4">Stay Tuned</h3>
+      <p class="text-xs text-slate-400 mb-3 leading-relaxed">Subscribe to get the latest snow alerts and exclusive winter tour deals.</p>
+      <form class="flex flex-col gap-2">
+        <input 
+          type="email" 
+          placeholder="Your email address" 
+          class="w-full px-3 py-2 text-sm bg-slate-800 text-slate-200 rounded-lg border border-slate-700 focus:outline-none focus:border-sky-500 transition-colors placeholder:text-slate-500"
+          required
+        />
+        <button 
+          type="submit" 
+          class="w-full bg-sky-600 hover:bg-sky-500 text-white font-semibold text-sm py-2 rounded-lg transition-colors duration-200 shadow-md shadow-sky-600/10"
+        >
+          Subscribe
+        </button>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- Pastki chiziq (Copyright) -->
+  <div class="border-t border-slate-800/60 bg-slate-950/40 py-6">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+      <div>
+        &copy; 2026 Travelsnow. All rights reserved. Built with passion for winter adventures.
+      </div>
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-slate-400 transition-colors">Privacy Policy</a>
+        <a href="#" class="hover:text-slate-400 transition-colors">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+  <script src="https://cdn.jotfor.ms/agent/embedjs/019eac407cd57a39911e6816ecb9609b4db1/embed.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    autoplay:true,
+autoplayTimeout:1000,
+
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 3000,
+    });
+  </script>
+<script src="../inde.js"></script>
+</html>
