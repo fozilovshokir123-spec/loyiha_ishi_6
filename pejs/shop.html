@@ -13,7 +13,33 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-
+<!-- LOADER START -->
+<div id="travel-loader" style="position:fixed;inset:0;background:#0a0f1e;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:99999;transition:opacity 0.8s ease,visibility 0.8s ease;">
+  <div style="position:relative;width:90px;height:90px;margin-bottom:28px;">
+    <div style="position:absolute;inset:0;border-radius:50%;border:2.5px solid transparent;border-top-color:#FD661E;border-right-color:#FD661E44;animation:tlSpin 1.8s linear infinite;"></div>
+    <div style="position:absolute;inset:10px;border-radius:50%;border:2.5px solid transparent;border-bottom-color:#3b8bfa;border-left-color:#3b8bfa44;animation:tlSpin 2.5s linear infinite reverse;"></div>
+    <div style="position:absolute;inset:22px;border-radius:50%;border:2.5px solid transparent;border-top-color:#ffffff33;border-right-color:#fff;animation:tlSpin 3.2s linear infinite;"></div>
+    <div style="position:absolute;inset:30px;background:radial-gradient(circle at 38% 38%,#FD661E,#c23a00);border-radius:50%;"></div>
+    <div style="position:absolute;inset:0;display:flex;align-items:flex-start;justify-content:center;font-size:20px;animation:tlOrbit 1.8s linear infinite;transform-origin:45px 45px;">✈️</div>
+  </div>
+  <div style="font-family:sans-serif;font-size:26px;font-weight:800;color:#fff;letter-spacing:2px;margin-bottom:6px;">Travel<span style="color:#FD661E;">snow</span></div>
+  <div style="font-family:sans-serif;font-size:12px;color:#aab4c8;letter-spacing:3px;text-transform:uppercase;margin-bottom:32px;">Exploring the world</div>
+  <div style="width:220px;height:3px;background:#ffffff18;border-radius:99px;overflow:hidden;margin-bottom:14px;">
+    <div id="tl-bar" style="height:100%;width:0%;background:linear-gradient(90deg,#FD661E,#ff9a5c);border-radius:99px;animation:tlLoad 2.6s ease forwards;"></div>
+  </div>
+  <div>
+    <span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:#FD661E;margin:0 3px;animation:tlBounce 1.2s ease-in-out infinite;"></span>
+    <span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:#ff9a5c;margin:0 3px;animation:tlBounce 1.2s ease-in-out 0.2s infinite;"></span>
+    <span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:#3b8bfa;margin:0 3px;animation:tlBounce 1.2s ease-in-out 0.4s infinite;"></span>
+  </div>
+</div>
+<style>
+  @keyframes tlSpin { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
+  @keyframes tlOrbit { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
+  @keyframes tlLoad { 0%{width:0%} 60%{width:75%} 85%{width:92%} 100%{width:100%} }
+  @keyframes tlBounce { 0%,80%,100%{transform:scale(0.6);opacity:0.5} 40%{transform:scale(1);opacity:1} }
+</style>
+<!-- LOADER END -->
    
 
     
@@ -460,6 +486,16 @@
   </div>
 </footer>
   </body>
+  <script>
+  window.addEventListener('load', function() {
+    setTimeout(function() {
+      var loader = document.getElementById('travel-loader');
+      loader.style.opacity = '0';
+      loader.style.visibility = 'hidden';
+      setTimeout(function(){ loader.remove(); }, 800);
+    }, 500);
+  });
+</script>
   <script src="https://cdn.jotfor.ms/agent/embedjs/019eac407cd57a39911e6816ecb9609b4db1/embed.js"></script>
   <script src="../inde.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
