@@ -297,7 +297,15 @@
           <li>• Affordable local cafes</li>
         </ul>
       </div>
-      <button class="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 text-sm font-semibold py-2 rounded-md transition-colors">Choose Budget</button>
+              <button
+  data-modal-target="default-modal1"
+  data-modal-toggle="default-modal1"
+  class="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 text-sm font-semibold py-2 rounded-md transition-colors"
+  type="button"
+>
+ Choose Standard
+</button>
+
     </div>
 
     <!-- 2. Standart Variant (Ommabop) -->
@@ -316,7 +324,17 @@
           <li>• Restaurant meals and skipass</li>
         </ul>
       </div>
-      <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold py-2 rounded-md transition-colors">Choose Standard</button>
+
+    
+          <button
+  data-modal-target="default-modal1"
+  data-modal-toggle="default-modal1"
+  class="text-white shadow-lg shadow-blue-900 bg-blue-900 rounded-[15px] bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none"
+  type="button"
+>
+ Choose Standard
+</button>
+
     </div>
 
     <!-- 3. Premium Variant (Lyuks) -->
@@ -332,12 +350,23 @@
           <li>• Private guide and fine dining</li>
         </ul>
       </div>
-      <button class="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 text-sm font-semibold py-2 rounded-md transition-colors">Choose Luxury</button>
+        <!-- Modal toggle -->
+         <button
+  data-modal-target="default-modal1"
+  data-modal-toggle="default-modal1"
+  class="text-white shadow-lg shadow-blue-900 bg-blue-500 bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none"
+  type="button"
+>
+  Choose Luxury
+</button>
+
     </div>
 
   </div>
 </div>
+<div class="max-w-[1200px] mx-auto px-[20px]">
 
+</div>
   
 <footer class="bg-slate-900 text-slate-300 font-sans mt-20 border-t border-slate-800">
   <!-- Asosiy qism -->
@@ -423,7 +452,96 @@
   </div>
 </footer>
 
+<div id="default-modal1" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-10000 justify-center items-center w-full h-full bg-black/75 backdrop-blur-md transition-all duration-300 p-2 sm:p-4">
+    
+    <!-- Compact Container -->
+    <div class="relative w-full max-w-[360px] sm:max-w-sm max-h-full flex flex-col justify-center mx-auto">
+        
+        <!-- Main Card -->
+        <div class="relative w-full rounded-2xl bg-white dark:bg-gray-900 shadow-2xl border border-gray-100 dark:border-gray-800 flex flex-col overflow-hidden">
+            
+            <!-- Modal Header -->
+            <div class="flex items-center justify-between px-4 py-3 border-b border-gray-100 dark:border-gray-800 shrink-0">
+                <div class="flex items-center gap-1.5">
+                    <span class="w-1 h-3.5 bg-blue-600 rounded-full"></span>
+                    <h3 class="text-lg font-bold text-gray-900 dark:text-white tracking-tight">Create Account</h3>
+                </div>
+                <!-- TEPADAGI X TUGMASI (Flowbite yopish xossasi qo'shildi) -->
+                <button type="button" data-modal-hide="default-modal1" class="text-gray-400 bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-gray-900 dark:hover:text-white rounded-lg text-sm w-8 h-8 inline-flex justify-center items-center transition-all duration-200">
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://w3.org" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+            
+            <!-- Modal Body (Compact Form) -->
+            <div class="p-4 space-y-3 overflow-y-auto max-h-[calc(100vh-160px)]">
+                <form action="#" class="space-y-3">
+                    <!-- Full Name -->
+                    <div>
+                        <label class="block mb-1 text-xs font-medium text-gray-600 dark:text-gray-400">Full Name</label>
+                        <input type="text" placeholder="John Doe" class="w-full px-3 py-2 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl text-gray-900 dark:text-white text-xs focus:ring-2 focus:ring-blue-500/20 focus:border-blue-600 outline-none transition-all" required>
+                    </div>
 
+                    <!-- Email Address -->
+                    <div>
+                        <label class="block mb-1 text-xs font-medium text-gray-600 dark:text-gray-400">Email Address</label>
+                        <input type="email" placeholder="name@company.com" class="w-full px-3 py-2 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl text-gray-900 dark:text-white text-xs focus:ring-2 focus:ring-blue-500/20 focus:border-blue-600 outline-none transition-all" required>
+                    </div>
+                    
+                    <!-- Password -->
+                    <div>
+                        <label class="block mb-1 text-xs font-medium text-gray-600 dark:text-gray-400">Password</label>
+                        <input type="password" placeholder="••••••••" class="w-full px-3 py-2 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl text-gray-900 dark:text-white text-xs focus:ring-2 focus:ring-blue-500/20 focus:border-blue-600 outline-none transition-all" required>
+                    </div>
+
+                    <!-- Terms Agreement -->
+                    <div class="flex items-start pt-0.5">
+                        <div class="flex items-center h-4">
+                            <input id="terms1" type="checkbox" class="w-3.5 h-3.5 border border-gray-300 rounded bg-gray-50 focus:ring-2 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600" required>
+                        </div>
+                        <label for="terms1" class="ms-2 text-xs text-gray-500 dark:text-gray-400">I agree to the <a href="#" class="text-blue-600 hover:underline dark:text-blue-500">Terms of Service</a></label>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="w-full text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 font-medium rounded-xl text-xs px-4 py-2.5 text-center transition-all duration-200 shadow-md shadow-blue-500/10">
+                        Sign Up
+                    </button>
+                </form>
+
+                <!-- Divider -->
+                <div class="relative flex py-1 items-center">
+                    <div class="flex-grow border-t border-gray-100 dark:border-gray-800"></div>
+                    <span class="flex-shrink mx-3 text-[10px] text-gray-400 uppercase tracking-wider">Or continue with</span>
+                    <div class="flex-grow border-t border-gray-100 dark:border-gray-800"></div>
+                </div>
+
+                <!-- Social Buttons -->
+                <div class="grid grid-cols-2 gap-2">
+                    <button type="button" class="flex items-center justify-center gap-1.5 h-9 border border-gray-200 dark:border-gray-700 rounded-xl text-xs font-medium text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all">
+                        Google
+                    </button>
+                    <button type="button" class="flex items-center justify-center gap-1.5 h-9 border border-gray-200 dark:border-gray-700 rounded-xl text-xs font-medium text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all">
+                        GitHub
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Modal Footer (PASTKI YOPISH TUGMASI QO'SHILDI) -->
+            <div class="px-4 py-3 border-t border-gray-100 dark:border-gray-800 bg-gray-50/50 dark:bg-gray-900/50 flex flex-col items-center gap-2 shrink-0">
+                <p class="text-xs text-gray-500 dark:text-gray-400">
+                    Already have an account? <a href="#" class="text-blue-600 hover:underline font-semibold dark:text-blue-500">Sign In</a>
+                </p>
+                <!-- PASTDAGI CLOSE TUGMASI (Flowbite yopish xossasi bilan) -->
+                <button type="button" data-modal-hide="default-modal1" class="w-full text-center text-xs font-medium text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl py-2 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all">
+                    Close Window
+                </button>
+            </div>
+            
+        </div>
+    </div>
+</div>
 </body>
   <script src="https://cdn.jotfor.ms/agent/embedjs/019eac407cd57a39911e6816ecb9609b4db1/embed.js"></script>
 
