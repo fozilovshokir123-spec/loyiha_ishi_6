@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css"
       rel="stylesheet"
@@ -399,10 +400,137 @@
 
 
       </section>
+      <section class="py-[150px] bg-slate-950 text-slate-100 min-h-screen font-sans" data-aos="fade-down">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    
+    <!-- HEADER -->
+    <div class="mb-12 text-center">
+      <h2 class="text-4xl font-black text-white tracking-tight sm:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-500">
+        Premium Travel Shop
+      </h2>
+      <p class="mx-auto mt-4 max-w-2xl text-lg text-slate-400">
+        Explore luxury destinations and view detailed insights around the world.
+      </p>
+    </div>
+
+    <!-- JS-SIZ TAB BOSHQUROVI (Faqat 2 ta Radio Tugma) -->
+    <input type="radio" name="premium-tabs" id="tab1" class="hidden peer/tab1" checked />
+    <input type="radio" name="premium-tabs" id="tab2" class="hidden peer/tab2" />
+
+    <!-- PREMIUM TAB TUGMALARI (LABELS) -->
+    <div class="flex justify-center mb-16">
+      <div class="inline-flex p-1.5 bg-slate-900/80 backdrop-blur-md rounded-2xl border border-slate-800 shadow-2xl shadow-indigo-950/20">
+        
+        <!-- Tab 1 Label: Destinations -->
+        <label for="tab1" class="cursor-pointer px-6 py-3 text-sm font-bold rounded-xl transition-all duration-300 flex items-center gap-2 text-slate-400 hover:text-white
+          peer-checked/tab1:bg-gradient-to-r peer-checked/tab1:from-blue-600 peer-checked/tab1:to-indigo-600 peer-checked/tab1:text-white peer-checked/tab1:shadow-lg peer-checked/tab1:shadow-indigo-600/20 [input#tab1:checked~div>&]:bg-gradient-to-r [input#tab1:checked~div>&]:from-blue-600 [input#tab1:checked~div>&]:to-indigo-600 [input#tab1:checked~div>&]:text-white [input#tab1:checked~div>&]:shadow-lg [input#tab1:checked~div>&]:shadow-indigo-600/20">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2H6a2 2 0 01-2-2V16zM14 16a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2h-2a2 2 0 01-2-2V16z"/></svg>
+          Destinations
+        </label>
+
+        <!-- Tab 2 Label: Information -->
+        <label for="tab2" class="cursor-pointer px-6 py-3 text-sm font-bold rounded-xl transition-all duration-300 flex items-center gap-2 text-slate-400 hover:text-white
+          peer-checked/tab2:bg-gradient-to-r peer-checked/tab2:from-blue-600 peer-checked/tab2:to-indigo-600 peer-checked/tab2:text-white peer-checked/tab2:shadow-lg peer-checked/tab2:shadow-indigo-600/20 [input#tab2:checked~div>&]:bg-gradient-to-r [input#tab2:checked~div>&]:from-blue-600 [input#tab2:checked~div>&]:to-indigo-600 [input#tab2:checked~div>&]:text-white [input#tab2:checked~div>&]:shadow-lg [input#tab2:checked~div>&]:shadow-indigo-600/20">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          Information
+        </label>
+
+      </div>
+    </div>
+
+    <!-- TAB KONTENTLARI -->
+    <div class="relative min-h-[500px]">
       
+      <!-- ================= PAGE 1: CARDS ================= -->
+      <div class="hidden opacity-0 scale-95 transition-all duration-500 [input#tab1:checked~div>&]:block [input#tab1:checked~div>&]:opacity-100 [input#tab1:checked~div>&]:scale-100">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Card 1 -->
+          <div class="group bg-slate-900 rounded-3xl p-5 border border-slate-800 hover:border-indigo-500/50 shadow-xl hover:shadow-indigo-500/10 hover:-translate-y-2 transition-all duration-300 ease-out flex flex-col justify-between cursor-pointer">
+            <div>
+              <div class="overflow-hidden rounded-2xl aspect-[4/3] w-full bg-slate-800 mb-4 relative">
+                <img src="../rasm/58ed808a790416aa458c0348bef3fa2766495ebb.jpg" alt="Chiang Mai" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <span class="absolute top-3 right-3 bg-slate-950/80 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-indigo-400 border border-indigo-500/30">Best Seller</span>
+              </div>
+              <div class="flex items-start justify-between gap-2 mb-2">
+                <h3 class="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors">Chiang Mai</h3>
+                <p class="text-xl font-black text-indigo-400">$490</p>
+              </div>
+              <p class="text-sm text-slate-400 leading-relaxed line-clamp-2 mb-6">Explore the ancient temples and the vibrant Chiang Mai Night Bazaar culture.</p>
+            </div>
+            <button class="w-full py-3.5 bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold uppercase tracking-wider rounded-xl transition-all duration-200 active:scale-95 shadow-lg shadow-indigo-600/30">Book Package</button>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="group bg-slate-900 rounded-3xl p-5 border border-slate-800 hover:border-indigo-500/50 shadow-xl hover:shadow-indigo-500/10 hover:-translate-y-2 transition-all duration-300 ease-out flex flex-col justify-between cursor-pointer">
+            <div>
+              <div class="overflow-hidden rounded-2xl aspect-[4/3] w-full bg-slate-800 mb-4 relative">
+                <img src="../imgs/photos2.png" alt="Chao Phraya" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              </div>
+              <div class="flex items-start justify-between gap-2 mb-2">
+                <h3 class="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors">Chao Phraya</h3>
+                <p class="text-xl font-black text-indigo-400">$98</p>
+              </div>
+              <p class="text-sm text-slate-400 leading-relaxed line-clamp-2 mb-6">Marvelous culinary and cultural cruise along the heart of the Thai capital.</p>
+            </div>
+            <button class="w-full py-3.5 bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold uppercase tracking-wider rounded-xl transition-all duration-200 active:scale-95">Book Package</button>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="group bg-slate-900 rounded-3xl p-5 border border-slate-800 hover:border-indigo-500/50 shadow-xl hover:shadow-indigo-500/10 hover:-translate-y-2 transition-all duration-300 ease-out flex flex-col justify-between cursor-pointer">
+            <div>
+              <div class="overflow-hidden rounded-2xl aspect-[4/3] w-full bg-slate-800 mb-4 relative">
+                <img src="../rasm/5b078625e70300161acb68964dfdc5ab5386cfc3.jpg" alt="Bangkok" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              </div>
+              <div class="flex items-start justify-between gap-2 mb-2">
+                <h3 class="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors">Bangkok</h3>
+                <p class="text-xl font-black text-indigo-400">$1,000</p>
+              </div>
+              <p class="text-sm text-slate-400 leading-relaxed line-clamp-2 mb-6">Luxury private boat tours looking over wonderful monuments and golden palaces.</p>
+            </div>
+            <button class="w-full py-3.5 bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold uppercase tracking-wider rounded-xl transition-all duration-200 active:scale-95">Book Package</button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ================= PAGE 2: DETAILS (INFO) ================= -->
+      <div class="hidden opacity-0 scale-95 transition-all duration-500 [input#tab2:checked~div>&]:block [input#tab2:checked~div>&]:opacity-100 [input#tab2:checked~div>&]:scale-100">
+        <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8 max-w-4xl mx-auto shadow-2xl">
+          <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+            <span class="h-2 w-2 rounded-full bg-indigo-500 animate-pulse"></span>
+            Exclusive Travel Insights & Inclusions
+          </h3>
+          
+          <div class="space-y-6 text-slate-300 text-base leading-relaxed">
+            <p>Our premium curated getaways are tailored for discerning travelers who seek unique cultural experiences combined with top-tier luxury accommodations.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
+              <div class="p-4 rounded-xl bg-slate-950 border border-slate-800/60 flex gap-3">
+                <span class="text-emerald-400 font-bold">✓</span>
+                <div>
+                  <h4 class="font-bold text-white text-sm">5-Star Accommodations</h4>
+                  <p class="text-xs text-slate-400 mt-1">Handpicked ultra-luxury hotels and private villas.</p>
+                </div>
+              </div>
+              <div class="p-4 rounded-xl bg-slate-950 border border-slate-800/60 flex gap-3">
+                <span class="text-emerald-400 font-bold">✓</span>
+                <div>
+                  <h4 class="font-bold text-white text-sm">24/7 Private Concierge</h4>
+                  <p class="text-xs text-slate-400 mt-1">A dedicated local expert available at any moment.</p>
+                </div>
+              </div>
+              <div class="p-4 rounded-xl bg-slate-950 border border-slate-800/60 flex gap-3">
+                <span class="text-emerald-400 font-bold">✓</span>
+                <div>
+                  <h4 class="font-bold text-white text-sm">All-Inclusive Luxury</h4>
+                  <p class="text-xs text-slate-400 mt-1">Fine dining, luggage clearance, and private charters.</p>
+                </div>
+              </div>
+
     </main>
   
-    <footer class="bg-slate-900 text-slate-300 font-sans mt-20 border-t border-slate-800">
+    <footer class="bg-slate-900 text-slate-300 font-sans border-t border-slate-800">
   <!-- Asosiy qism -->
   <div class="max-w-7xl mx-auto px-4 py-12 md:py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
     
@@ -496,7 +624,14 @@
     }, 500);
   });
 </script>
-  <script src="https://cdn.jotfor.ms/agent/embedjs/019eac407cd57a39911e6816ecb9609b4db1/embed.js"></script>
-  <script src="../inde.js"></script>
+<script src='https://cdn.jotfor.ms/agent/embedjs/019f02f4368672d0b5c87cb4dc3107b32630/embed.js'>
+</script>
+<script src="../inde.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 3000,
+    });
+  </script>
 </html>

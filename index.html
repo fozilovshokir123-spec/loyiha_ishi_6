@@ -42,7 +42,7 @@
 </style>
 <!-- LOADER END -->
     <header
-      class="py-[30px] bg-[url(./imgs/hederfon.png)] bg-blue-500 fixed w-full z-100"
+      class="py-[30px] bg-[url(./imgs/hederfon.png)] bg-blue-500 fixed w-full z-50 "
       data-aos="fade-down"
     >
       <div
@@ -408,7 +408,7 @@
             </div>
             
             <!-- SEARCH Tugmasi (Modalni ochish atributlari qo'shildi) -->
-            <button data-modal-target="default-modal" data-modal-toggle="default-modal" type="button" class="w-full h-14 bg-gradient-to-r from-[#FD661E] to-orange-500 text-white font-bold text-sm tracking-wider uppercase rounded-xl shadow-lg shadow-orange-600/30 hover:shadow-orange-600/50 active:scale-95 transition-all duration-300 cursor-pointer flex items-center justify-center gap-2">
+            <button data-modal-target="default-modal1" data-modal-toggle="default-modal1" type="button" class="w-full h-14 bg-gradient-to-r from-[#FD661E] to-orange-500 text-white font-bold text-sm tracking-wider uppercase rounded-xl shadow-lg shadow-orange-600/30 hover:shadow-orange-600/50 active:scale-95 transition-all duration-300 cursor-pointer flex items-center justify-center gap-2">
                 <svg xmlns="http://w3.org" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.602 10.602z" />
                 </svg>
@@ -419,7 +419,7 @@
     </div>
 </section>
 
-      <section class="py-20 md:py-28 bg-gray-950 overflow-hidden">
+<section class="py-20 md:py-28 bg-gray-950 overflow-hidden">
     <div class="max-w-[1200px] mx-auto px-5">
         
         <!-- Sarlavha qismi -->
@@ -439,9 +439,8 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             
             <!-- Karta 1 -->
-            <div class="group relative rounded-3xl p-4 bg-gradient-to-b from-gray-900 to-gray-950 border border-white/10 flex flex-col justify-between cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:border-[#FD661E]/50 hover:shadow-[0_20px_40px_rgba(253,102,30,0.15)]" data-aos="fade-down">
+            <div onclick="openModal('modal-caribbean')" class="group relative rounded-3xl p-4 bg-gradient-to-b from-gray-900 to-gray-950 border border-white/10 flex flex-col justify-between cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:border-[#FD661E]/50 hover:shadow-[0_20px_40px_rgba(253,102,30,0.15)]" data-aos="fade-down">
                 <div>
-                    <!-- Rasm Joylashtirish Uchun Premium Konteyner -->
                     <div class="relative w-full aspect-video rounded-2xl overflow-hidden mb-5 border border-white/[0.05]">
                         <img src="./imgs/photos5.png" alt="Caribbean" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                         <div class="absolute top-2 left-2 w-8 h-8 rounded-lg bg-black/40 backdrop-blur-md flex items-center justify-center text-sm">🏝️</div>
@@ -452,20 +451,18 @@
                     <p class="text-xs text-gray-400 mt-2 font-light leading-relaxed">Experience pristine white sands, crystal clear turquoise waters, and ultimate island relaxation.</p>
                 </div>
                 
-                <!-- Pastki qism (Narx va Tugma) -->
                 <div class="flex items-center justify-between pt-4 mt-6 border-t border-white/[0.06]">
                     <span class="text-base font-black text-white">$1,200</span>
                     <span class="text-xs font-bold text-white bg-[#FD661E] px-3 py-2 rounded-xl flex items-center gap-1 hover:bg-orange-600 transition-colors shadow-md shadow-orange-600/20">
-                        Book Now
+                        Details
                         <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"/></svg>
                     </span>
                 </div>
             </div>
 
             <!-- Karta 2 -->
-            <div class="group relative rounded-3xl p-4 bg-gradient-to-b from-gray-900 to-gray-950 border border-white/10 flex flex-col justify-between cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:border-[#FD661E]/50 hover:shadow-[0_20px_40px_rgba(253,102,30,0.15)]" data-aos="fade-up">
+            <div onclick="openModal('modal-europe')" class="group relative rounded-3xl p-4 bg-gradient-to-b from-gray-900 to-gray-950 border border-white/10 flex flex-col justify-between cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:border-[#FD661E]/50 hover:shadow-[0_20px_40px_rgba(253,102,30,0.15)]" data-aos="fade-up">
                 <div>
-                    <!-- Rasm Joylashtirish Uchun Premium Konteyner -->
                     <div class="relative w-full aspect-video rounded-2xl overflow-hidden mb-5 border border-white/[0.05]">
                         <img src="./imgs/photos6.png" alt="Europe" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                         <div class="absolute top-2 left-2 w-8 h-8 rounded-lg bg-black/40 backdrop-blur-md flex items-center justify-center text-sm">🏔️</div>
@@ -478,16 +475,15 @@
                 <div class="flex items-center justify-between pt-4 mt-6 border-t border-white/[0.06]">
                     <span class="text-base font-black text-white">$850</span>
                     <span class="text-xs font-bold text-white bg-[#FD661E] px-3 py-2 rounded-xl flex items-center gap-1 hover:bg-orange-600 transition-colors shadow-md shadow-orange-600/20">
-                        Book Now
+                        Details
                         <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"/></svg>
                     </span>
                 </div>
             </div>
 
             <!-- Karta 3 -->
-            <div class="group relative rounded-3xl p-4 bg-gradient-to-b from-gray-900 to-gray-950 border border-white/10 flex flex-col justify-between cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:border-[#FD661E]/50 hover:shadow-[0_20px_40px_rgba(253,102,30,0.15)]" data-aos="fade-down">
+            <div onclick="openModal('modal-asia')" class="group relative rounded-3xl p-4 bg-gradient-to-b from-gray-900 to-gray-950 border border-white/10 flex flex-col justify-between cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:border-[#FD661E]/50 hover:shadow-[0_20px_40px_rgba(253,102,30,0.15)]" data-aos="fade-down">
                 <div>
-                    <!-- Rasm Joylashtirish Uchun Premium Konteyner -->
                     <div class="relative w-full aspect-video rounded-2xl overflow-hidden mb-5 border border-white/[0.05]">
                         <img src="./imgs/photos7.png" alt="Asia" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                         <div class="absolute top-2 left-2 w-8 h-8 rounded-lg bg-black/40 backdrop-blur-md flex items-center justify-center text-sm">🏮</div>
@@ -500,16 +496,15 @@
                 <div class="flex items-center justify-between pt-4 mt-6 border-t border-white/[0.06]">
                     <span class="text-base font-black text-white">$1,450</span>
                     <span class="text-xs font-bold text-white bg-[#FD661E] px-3 py-2 rounded-xl flex items-center gap-1 hover:bg-orange-600 transition-colors shadow-md shadow-orange-600/20">
-                        Book Now
+                        Details
                         <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"/></svg>
                     </span>
                 </div>
             </div>
 
             <!-- Karta 4 -->
-            <div class="group relative rounded-3xl p-4 bg-gradient-to-b from-gray-900 to-gray-950 border border-white/10 flex flex-col justify-between cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:border-[#FD661E]/50 hover:shadow-[0_20px_40px_rgba(253,102,30,0.15)]" data-aos="fade-up">
+            <div onclick="openModal('modal-africa')" class="group relative rounded-3xl p-4 bg-gradient-to-b from-gray-900 to-gray-950 border border-white/10 flex flex-col justify-between cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:border-[#FD661E]/50 hover:shadow-[0_20px_40px_rgba(253,102,30,0.15)]" data-aos="fade-up">
                 <div>
-                    <!-- Rasm Joylashtirish Uchun Premium Konteyner -->
                     <div class="relative w-full aspect-video rounded-2xl overflow-hidden mb-5 border border-white/[0.05]">
                         <img src="./imgs/photos8.png" alt="Africa" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                         <div class="absolute top-2 left-2 w-8 h-8 rounded-lg bg-black/40 backdrop-blur-md flex items-center justify-center text-sm">🦁</div>
@@ -522,7 +517,7 @@
                 <div class="flex items-center justify-between pt-4 mt-6 border-t border-white/[0.06]">
                     <span class="text-base font-black text-white">$990</span>
                     <span class="text-xs font-bold text-white bg-[#FD661E] px-3 py-2 rounded-xl flex items-center gap-1 hover:bg-orange-600 transition-colors shadow-md shadow-orange-600/20">
-                        Book Now
+                        Details
                         <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"/></svg>
                     </span>
                 </div>
@@ -531,6 +526,160 @@
         </div>
     </div>
 </section>
+
+<!-- ================= MODAL OYNALARI ROʻYXATI ================= -->
+
+<!-- Modal 1: Caribbean -->
+<div id="modal-caribbean" class="fixed inset-0 z-50000000 hidden flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm transition-opacity duration-300 opacity-0">
+    <div class="bg-gray-900 border border-white/10 rounded-3xl max-w-lg w-full overflow-hidden shadow-2xl transform scale-95 transition-transform duration-300">
+        <div class="relative h-48 sm:h-56">
+            <img src="./imgs/photos5.png" alt="Caribbean" class="w-full h-full object-cover">
+            <button onclick="closeModal('modal-caribbean')" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-black/60 text-white flex items-center justify-center hover:bg-black/80 transition-colors">✕</button>
+        </div>
+        <div class="p-6">
+            <span class="text-xs font-bold uppercase text-orange-400">🏝️ 7 Days / 6 Nights</span>
+            <h3 class="text-2xl font-black text-white mt-1 mb-3">Tropical Caribbean Paradise</h3>
+            <p class="text-sm text-gray-400 font-light leading-relaxed mb-4">
+                Enjoy an all-inclusive premium luxury stay at the heart of the Caribbean. This package covers white-sand beach resorts, guided scuba diving sessions, and private island boat tours.
+            </p>
+            <div class="space-y-2 mb-6">
+                <div class="flex items-center gap-2 text-xs text-gray-300"><span class="text-orange-400">✓</span> 5-Star Beachfront Hotel</div>
+                <div class="flex items-center gap-2 text-xs text-gray-300"><span class="text-orange-400">✓</span> All Meals & Tropical Drinks Included</div>
+                <div class="flex items-center gap-2 text-xs text-gray-300"><span class="text-orange-400">✓</span> Airport Transfer & Local Guide</div>
+            </div>
+            <div class="flex items-center justify-between pt-4 border-t border-white/10">
+                <div>
+                    <span class="text-[10px] text-gray-400 block uppercase font-bold">Total Price</span>
+                    <span class="text-2xl font-black text-white">$1,200</span>
+                </div>
+                <button class="bg-[#FD661E] hover:bg-orange-600 text-white text-sm font-bold px-6 py-3 rounded-xl transition-colors shadow-lg shadow-orange-600/20">Confirm Booking</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 2: Europe -->
+<div id="modal-europe" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm transition-opacity duration-300 opacity-0">
+    <div class="bg-gray-900 border border-white/10 rounded-3xl max-w-lg w-full overflow-hidden shadow-2xl transform scale-95 transition-transform duration-300">
+        <div class="relative h-48 sm:h-56">
+            <img src="./imgs/photos6.png" alt="Europe" class="w-full h-full object-cover">
+            <button onclick="closeModal('modal-europe')" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-black/60 text-white flex items-center justify-center hover:bg-black/80 transition-colors">✕</button>
+        </div>
+        <div class="p-6">
+            <span class="text-xs font-bold uppercase text-orange-400">🏔️ 5 Days / 4 Nights</span>
+            <h3 class="text-2xl font-black text-white mt-1 mb-3">Swiss Alps Adventure</h3>
+            <p class="text-sm text-gray-400 font-light leading-relaxed mb-4">
+                Breathtaking views and snowy landscapes await you. Perfect for skiing enthusiasts or anyone looking for a cozy, peaceful winter retreat in European chalets.
+            </p>
+            <div class="space-y-2 mb-6">
+                <div class="flex items-center gap-2 text-xs text-gray-300"><span class="text-orange-400">✓</span> Ski Resort Pass Included</div>
+                <div class="flex items-center gap-2 text-xs text-gray-300"><span class="text-orange-400">✓</span> Traditional Chalet Accommodation</div>
+                <div class="flex items-center gap-2 text-xs text-gray-300"><span class="text-orange-400">✓</span> Mountain Cable Car Access</div>
+            </div>
+            <div class="flex items-center justify-between pt-4 border-t border-white/10">
+                <div>
+                    <span class="text-[10px] text-gray-400 block uppercase font-bold">Total Price</span>
+                    <span class="text-2xl font-black text-white">$850</span>
+                </div>
+                <button class="bg-[#FD661E] hover:bg-orange-600 text-white text-sm font-bold px-6 py-3 rounded-xl transition-colors shadow-lg shadow-orange-600/20">Confirm Booking</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 3: Asia -->
+<div id="modal-asia" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm transition-opacity duration-300 opacity-0">
+    <div class="bg-gray-900 border border-white/10 rounded-3xl max-w-lg w-full overflow-hidden shadow-2xl transform scale-95 transition-transform duration-300">
+        <div class="relative h-48 sm:h-56">
+            <img src="./imgs/photos7.png" alt="Asia" class="w-full h-full object-cover">
+            <button onclick="closeModal('modal-asia')" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-black/60 text-white flex items-center justify-center hover:bg-black/80 transition-colors">✕</button>
+        </div>
+        <div class="p-6">
+            <span class="text-xs font-bold uppercase text-orange-400">🏮 6 Days / 5 Nights</span>
+            <h3 class="text-2xl font-black text-white mt-1 mb-3">Vibrant Tokyo Exploration</h3>
+            <p class="text-sm text-gray-400 font-light leading-relaxed mb-4">
+                Immerse yourself in Japan's unique culture. Walk through neon-lit streets, taste authentic sushi, and find serenity in historic Shinto shrines.
+            </p>
+            <div class="space-y-2 mb-6">
+                <div class="flex items-center gap-2 text-xs text-gray-300"><span class="text-orange-400">✓</span> Tokyo Metro Unlimited Pass</div>
+                <div class="flex items-center gap-2 text-xs text-gray-300"><span class="text-orange-400">✓</span> Guided Food & Culture Tour</div>
+                <div class="flex items-center gap-2 text-xs text-gray-300"><span class="text-orange-400">✓</span> Premium Capsule or Boutique Hotel</div>
+            </div>
+            <div class="flex items-center justify-between pt-4 border-t border-white/10">
+                <div>
+                    <span class="text-[10px] text-gray-400 block uppercase font-bold">Total Price</span>
+                    <span class="text-2xl font-black text-white">$1,450</span>
+                </div>
+                <button class="bg-[#FD661E] hover:bg-orange-600 text-white text-sm font-bold px-6 py-3 rounded-xl transition-colors shadow-lg shadow-orange-600/20">Confirm Booking</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 4: Africa -->
+<div id="modal-africa" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm transition-opacity duration-300 opacity-0">
+    <div class="bg-gray-900 border border-white/10 rounded-3xl max-w-lg w-full overflow-hidden shadow-2xl transform scale-95 transition-transform duration-300">
+        <div class="relative h-48 sm:h-56">
+            <img src="./imgs/photos8.png" alt="Africa" class="w-full h-full object-cover">
+            <button onclick="closeModal('modal-africa')" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-black/60 text-white flex items-center justify-center hover:bg-black/80 transition-colors">✕</button>
+        </div>
+        <div class="p-6">
+            <span class="text-xs font-bold uppercase text-orange-400">🦁 8 Days / 7 Nights</span>
+            <h3 class="text-2xl font-black text-white mt-1 mb-3">Wild African Safari</h3>
+            <p class="text-sm text-gray-400 font-light leading-relaxed mb-4">
+                Get closer to nature than ever before. Experience daily game drives to see lions, elephants, and leopards across the vast Serengeti plains.
+            </p>
+            <div class="space-y-2 mb-6">
+                <div class="flex items-center gap-2 text-xs text-gray-300"><span class="text-orange-400">✓</span> 4x4 Custom Safari Vehicles</div>
+                <div class="flex items-center gap-2 text-xs text-gray-300"><span class="text-orange-400">✓</span> Luxury Eco-Lodge Stay</div>
+                <div class="flex items-center gap-2 text-xs text-gray-300"><span class="text-orange-400">✓</span> National Park Entry Fees Included</div>
+            </div>
+            <div class="flex items-center justify-between pt-4 border-t border-white/10">
+                <div>
+                    <span class="text-[10px] text-gray-400 block uppercase font-bold">Total Price</span>
+                    <span class="text-2xl font-black text-white">$990</span>
+                </div>
+                <button class="bg-[#FD661E] hover:bg-orange-600 text-white text-sm font-bold px-6 py-3 rounded-xl transition-colors shadow-lg shadow-orange-600/20">Confirm Booking</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modallarni boshqarish uchun JS Skript -->
+<script>
+function openModal(id) {
+    const modal = document.getElementById(id);
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    // Animatsiya silliq chiqishi uchun biroz kechikish bilan klass qo'shamiz
+    setTimeout(() => {
+        modal.classList.remove('opacity-0');
+        modal.querySelector('.transform').classList.remove('scale-95');
+        modal.querySelector('.transform').classList.add('scale-100');
+    }, 10);
+    document.body.style.overflow = 'hidden'; // Orqa fon skroll bo'lmasligi uchun
+}
+
+function closeModal(id) {
+    const modal = document.getElementById(id);
+    modal.classList.add('opacity-0');
+    modal.querySelector('.transform').classList.remove('scale-100');
+    modal.querySelector('.transform').classList.add('scale-95');
+    
+    setTimeout(() => {
+        modal.classList.remove('flex');
+        modal.classList.add('hidden');
+    }, 300); // Tranzitsiya vaqti bilan bir xil
+    document.body.style.overflow = 'auto';
+}
+
+// Modal tashqarisiga bosilganda yopilishi uchun
+window.onclick = function(event) {
+    if (event.target.classList.contains('fixed')) {
+        closeModal(event.target.id);
+    }
+}
+</script>
 
       <section class="relative py-20 md:py-28 bg-gradient-to-b from-white to-gray-50 overflow-hidden">
     
@@ -725,109 +874,139 @@
   </div>
         </section>
 
-          <section class="py-[60px]">
-          <div class="max-w-[1200px] mx-auto px-[20px]">
-            <center>
-              <p class="text-[#FD661E]">Clear Price</p>
-              <h1 class="text-[50px] font-bold text-[#181D4E]">
-                Affordable Travel Packages
-              </h1>
-              <br />
-              <p>
-                We believe that everyone deserves to experience their dream
-                vacation without breaking the bank.
-                <br />
-                That's why we offer a price section on our website that features a
-                range of affordable travel
-              </p>
-            </center>
-            <br />
-            <br />
-            <br />
-            <div
-              class="cards grid grid-cols-3 gap-[40px] max-[900px]:grid-cols-2 max-[600px]:grid-cols-1"
-            >
-              <div
-                class="card max-w-[400px] h-[500px] bg-[#EDF2F5] p-[40px] text-center rounded-[15px] hover:scale-[1.1] duration-300"
-              >
-                <p>Half Board</p>
-                <p class="text-[40px] font-bold">$ 50</p>
-                <br />
-                <p>
-                  Transfers from Airport
-                  <br />
-                  <br />
-                  Alcoholic beverages
-                  <br />
-                  <br />
-                  Incl. Museum Tickets
-                  <br />
-                  <br />
-                  Meals in Restaurants
-                </p>
-                <br />
-                <br />
-                <button
-                  class="cursor-pointer w-[130px] h-[40px] bg-[#FD661E] text-[white] rounded-[5px]"
-                >
-                  VIEW TRIPS
-                </button>
-              </div>
-              <div
-                class="card max-w-[400px] h-[500px] bg-[#FD661E] p-[40px] text-center rounded-[15px] hover:scale-[1.1] duration-300"
-              >
-                <p class="text-[white]">Half Board</p>
-                <p class="text-[white] text-[40px] font-bold">$ 32</p>
-                <br />
-                <p class="text-[white]">
-                  Transfers from Airport
-                  <br />
-                  <br />
-                  Alcoholic beverages
-                  <br />
-                  <br />
-                  Incl. Museum Tickets
-                  <br />
-                  <br />
-                  Meals in Restaurants
-                </p>
-                <br />
-                <br />
-                <button
-                  class="cursor-pointer w-[130px] h-[40px] bg-[#1D1D54] text-[white] rounded-[5px]"
-                >
-                  VIEW TRIPS
-                </button>
-              </div>
-              <div
-                class="card max-w-[400px] h-[500px] bg-[#1D1D54] p-[40px] text-center rounded-[15px] hover:scale-[1.1] duration-300 text-[white]"
-              >
-                <p>Half Board</p>
-                <p class="text-[40px] font-bold">$ 68</p>
-                <br />
-                <p>
-                  Transfers from Airport
-                  <br />
-                  <br />
-                  Alcoholic beverages
-                  <br />
-                  <br />
-                  Incl. Museum Tickets
-                  <br />
-                  <br />
-                  Meals in Restaurants
-                </p>
-                <br />
-                <br />
-                <button
-                  class="cursor-pointer w-[130px] h-[40px] bg-[#FD661E] text-[white] rounded-[5px]"
-                >
-                  VIEW TRIPS
-                </button>
-              </div>
-            </div>
-          </div>
-          </section>
+      <!-- 1. MODAL NAZORATCHILARI (Butun ekran uchun kodning eng tepasida turishi shart) -->
+<input type="checkbox" id="modal-basic" class="peer/basic hidden" />
+<input type="checkbox" id="modal-premium" class="peer/premium hidden" />
+<input type="checkbox" id="modal-half" class="peer/half hidden" />
+
+<!-- ========================================== -->
+<!-- GLOBAL MODAL OYNALARI (BUTUN EKRANDA CHIQADI) -->
+<!-- ========================================== -->
+
+<!-- 1. Basic Modal -->
+<div class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[9999] opacity-0 pointer-events-none peer-checked/basic:opacity-100 peer-checked/basic:pointer-events-auto transition-all duration-300 flex items-center justify-center p-4">
+  <div class="bg-white rounded-2xl max-w-md w-full p-8 shadow-2xl space-y-4 relative transform scale-95 peer-checked/basic:scale-100 transition-all duration-300">
+    <label for="modal-basic" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-3xl font-semibold cursor-pointer">&times;</label>
+    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center text-orange-500 text-2xl mx-auto">✈️</div>
+    <h3 class="text-2xl font-bold text-slate-900 text-center">Basic Board</h3>
+    <p class="text-gray-500 text-sm text-center">You have selected the basic vacation package. Complete your booking now.</p>
+    <div class="bg-gray-50 p-4 rounded-xl flex justify-between items-center my-4 border border-gray-100">
+      <span class="text-gray-600 font-medium">Total Price</span>
+      <span class="text-xl font-bold text-orange-500">$32</span>
+    </div>
+    <label for="modal-basic" class="block w-full py-3 bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold rounded-xl shadow-lg text-center cursor-pointer hover:opacity-90">Confirm Booking</label>
+  </div>
+</div>
+
+<!-- 2. Premium Modal -->
+<div class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[9999] opacity-0 pointer-events-none peer-checked/premium:opacity-100 peer-checked/premium:pointer-events-auto transition-all duration-300 flex items-center justify-center p-4">
+  <div class="bg-white rounded-2xl max-w-md w-full p-8 shadow-2xl space-y-4 relative transform scale-95 peer-checked/premium:scale-100 transition-all duration-300">
+    <label for="modal-premium" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-3xl font-semibold cursor-pointer">&times;</label>
+    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center text-orange-500 text-2xl mx-auto">👑</div>
+    <h3 class="text-2xl font-bold text-slate-900 text-center">Premium Board</h3>
+    <p class="text-gray-500 text-sm text-center">You have selected the ultimate premium vacation package. Complete your booking now.</p>
+    <div class="bg-gray-50 p-4 rounded-xl flex justify-between items-center my-4 border border-gray-100">
+      <span class="text-gray-600 font-medium">Total Price</span>
+      <span class="text-xl font-bold text-orange-500">$68</span>
+    </div>
+    <label for="modal-premium" class="block w-full py-3 bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold rounded-xl shadow-lg text-center cursor-pointer hover:opacity-90">Confirm Booking</label>
+  </div>
+</div>
+
+<!-- 3. Half Board Modal -->
+<div class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[9999] opacity-0 pointer-events-none peer-checked/half:opacity-100 peer-checked/half:pointer-events-auto transition-all duration-300 flex items-center justify-center p-4">
+  <div class="bg-white rounded-2xl max-w-md w-full p-8 shadow-2xl space-y-4 relative transform scale-95 peer-checked/half:scale-100 transition-all duration-300">
+    <label for="modal-half" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-3xl font-semibold cursor-pointer">&times;</label>
+    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center text-orange-500 text-2xl mx-auto">🌟</div>
+    <h3 class="text-2xl font-bold text-slate-900 text-center">Half Board</h3>
+    <p class="text-gray-500 text-sm text-center">You have selected the standard Half Board vacation package. Complete your booking now.</p>
+    <div class="bg-gray-50 p-4 rounded-xl flex justify-between items-center my-4 border border-gray-100">
+      <span class="text-gray-600 font-medium">Total Price</span>
+      <span class="text-xl font-bold text-orange-500">$50</span>
+    </div>
+    <label for="modal-half" class="block w-full py-3 bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold rounded-xl shadow-lg text-center cursor-pointer hover:opacity-90">Confirm Booking</label>
+  </div>
+</div>
+
+
+<!-- ========================================== -->
+<!-- TARIF KARTALARI SEKSIYASI -->
+<!-- ========================================== -->
+<section class="py-24 bg-gray-50 relative overflow-hidden">
+  <div class="max-w-6xl mx-auto px-6 relative z-10">
+    
+    <!-- Sarlavha qismi -->
+    <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+      <span class="text-orange-500 font-semibold tracking-wider uppercase text-sm">Clear Price</span>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">
+        Affordable Travel Packages
+      </h1>
+      <p class="text-gray-600 leading-relaxed text-base">
+        We believe that everyone deserves to experience their dream vacation without breaking the bank. Explore our carefully curated premium plans.
+      </p>
+    </div>
+
+    <!-- Tarif Kartalari Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
+      
+      <!-- 1-Karta: Basic Board -->
+      <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm text-center flex flex-col justify-between h-[520px] transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+        <div>
+          <span class="inline-block bg-gray-100 text-gray-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4">Basic Board</span>
+          <div class="text-5xl font-black text-slate-900 mb-6">$32</div>
+          <ul class="space-y-4 text-gray-600 text-sm border-t border-gray-100 pt-6">
+            <li>Transfers from Airport</li>
+            <li>Soft drinks only</li>
+            <li>Incl. Museum Tickets</li>
+            <li class="text-gray-400 line-through">Meals in Restaurants</li>
+          </ul>
+        </div>
+        <label for="modal-basic" class="block w-full py-3 bg-slate-900 text-white font-medium rounded-xl hover:bg-slate-800 transition-colors shadow-md mt-6 text-center cursor-pointer select-none">
+          VIEW TRIPS
+        </label>
+      </div>
+
+      <!-- 2-Karta: PREMIUM BOARD (Markaziy) -->
+      <div class="bg-gradient-to-b from-orange-500 to-red-500 p-8 rounded-2xl shadow-xl text-center flex flex-col justify-between h-[560px] lg:-translate-y-4 transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] relative border-2 border-orange-400">
+        <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-slate-900 text-white text-xs font-bold px-4 py-1 rounded-full uppercase tracking-widest shadow-md">
+          Most Popular
+        </div>
+        <div>
+          <span class="inline-block bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4 mt-2">Premium Board</span>
+          <div class="text-6xl font-black text-white mb-6">$68</div>
+          <ul class="space-y-4 text-white/90 text-sm border-t border-white/20 pt-6">
+            <li class="font-medium">✨ Priority Airport Transfers</li>
+            <li>Premium Alcoholic beverages</li>
+            <li>VIP Museum Access Tickets</li>
+            <li>All Meals in Luxury Restaurants</li>
+          </ul>
+        </div>
+        <label for="modal-premium" class="block w-full py-3 bg-white text-orange-600 font-bold rounded-xl hover:bg-gray-50 transition-colors shadow-lg mt-6 text-center cursor-pointer select-none">
+          CHOOSE PREMIUM
+        </label>
+      </div>
+
+      <!-- 3-Karta: Half Board -->
+      <div class="bg-slate-900 p-8 rounded-2xl shadow-sm text-center flex flex-col justify-between h-[520px] transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+        <div>
+          <span class="inline-block bg-white/10 text-orange-400 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4">Half Board</span>
+          <div class="text-5xl font-black text-white mb-6">$50</div>
+          <ul class="space-y-4 text-slate-300 text-sm border-t border-slate-800 pt-6">
+            <li>Standard Airport Transfers</li>
+            <li>Local Alcoholic beverages</li>
+            <li>Standard Museum Tickets</li>
+            <li>Standard Restaurant Meals</li>
+          </ul>
+        </div>
+        <label for="modal-half" class="block w-full py-3 bg-orange-500 text-white font-medium rounded-xl hover:bg-orange-600 transition-colors shadow-md mt-6 text-center cursor-pointer select-none">
+          VIEW TRIPS
+        </label>
+      </div>
+
+    </div>
+  </div>
+</section>
+  
         <section class="py-[60px]">
         <div
           class="max-w-[1200px] mx-auto px-[20px] grid grid-cols-2 max-[1000px]:grid-cols-1 gap-[30px]"
@@ -1280,8 +1459,8 @@
     }, 500);
   });
 </script>
-  <script src="https://cdn.jotfor.ms/agent/embedjs/019eac407cd57a39911e6816ecb9609b4db1/embed.js"></script>
-  <script src="https://unpkg.com/img-comparison-slider@8/dist/index.js"></script>
+<script src='https://cdn.jotfor.ms/agent/embedjs/019f02f4368672d0b5c87cb4dc3107b32630/embed.js'>
+</script>  <script src="https://unpkg.com/img-comparison-slider@8/dist/index.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -1298,3 +1477,79 @@
     referrerpolicy="no-referrer"
   ></script>
 </html>
+<!-- SEARCH MODAL OYNASI -->
+<div id="default-modal1" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-500 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full bg-black/60 backdrop-blur-sm transition-all duration-300">
+    <div class="relative w-full max-w-2xl max-h-full mx-auto mt-20">
+        <!-- Modal Content -->
+        <div class="relative bg-white rounded-2xl shadow-2xl dark:bg-gray-900 border border-gray-100 dark:border-gray-800 overflow-hidden transform transition-all">
+            
+            <!-- Modal Header / Search Input -->
+            <div class="flex items-center justify-between p-4 border-b border-gray-100 dark:border-gray-800">
+                <div class="relative w-full mr-4">
+                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none text-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.602 10.602z" />
+                        </svg>
+                    </div>
+                    <!-- English Travel Placeholder -->
+                    <input type="search" id="search-input" class="block w-full p-3 pl-11 text-base text-gray-950 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#FD661E] focus:border-[#FD661E] dark:bg-gray-800 dark:border-gray-700 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#FD661E]" placeholder="Where do you want to travel? (city, country, or resort)..." required autocomplete="off">
+                </div>
+                
+                <!-- Close Button -->
+                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-100 hover:text-gray-900 rounded-xl text-sm w-10 h-10 inline-flex justify-center items-center dark:hover:bg-gray-800 dark:hover:text-white transition-colors cursor-pointer" data-modal-hide="default-modal1">
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                    </svg>
+                    <span class="sr-only">Close</span>
+                </button>
+            </div>
+            
+            <!-- Modal Body / Recommendations & Results -->
+            <div class="p-6 max-h-[60vh] overflow-y-auto space-y-6">
+                
+                <!-- 1. Popular Destinations (Tags) -->
+                <div>
+                    <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">Popular Destinations</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <button class="px-3 py-1.5 text-sm font-medium text-gray-700 bg-gray-100 hover:bg-[#FD661E]/10 hover:text-[#FD661E] rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 transition-colors cursor-pointer">Antalya, Turkey</button>
+                        <button class="px-3 py-1.5 text-sm font-medium text-gray-700 bg-gray-100 hover:bg-[#FD661E]/10 hover:text-[#FD661E] rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 transition-colors cursor-pointer">Dubai, UAE</button>
+                        <button class="px-3 py-1.5 text-sm font-medium text-gray-700 bg-gray-100 hover:bg-[#FD661E]/10 hover:text-[#FD661E] rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 transition-colors cursor-pointer">Sharm El Sheikh, Egypt</button>
+                        <button class="px-3 py-1.5 text-sm font-medium text-gray-700 bg-gray-100 hover:bg-[#FD661E]/10 hover:text-[#FD661E] rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 transition-colors cursor-pointer">Samarkand, Uzbekistan</button>
+                        <button class="px-3 py-1.5 text-sm font-medium text-gray-700 bg-gray-100 hover:bg-[#FD661E]/10 hover:text-[#FD661E] rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 transition-colors cursor-pointer">Maldives</button>
+                    </div>
+                </div>
+
+                <!-- 2. Recent Searches -->
+                <div>
+                    <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">Recent Searches</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="#" class="flex items-center gap-3 p-2.5 text-sm text-gray-700 rounded-xl hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-gray-800/50 group transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 text-gray-400 group-hover:text-[#FD661E]">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <span>Summer family vacation resorts</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center gap-3 p-2.5 text-sm text-gray-700 rounded-xl hover:bg-gray-50 dark:text-gray-300 dark:hover:bg-gray-800/50 group transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 text-gray-400 group-hover:text-[#FD661E]">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <span>Visa-free European tours</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            
+            <!-- Modal Footer / Instructions -->
+            <div class="p-3 bg-gray-50 border-t border-gray-100 dark:bg-gray-800/50 dark:border-gray-800 flex justify-end gap-4 text-xs text-gray-400">
+                <span class="flex items-center gap-1"><kbd class="px-1.5 py-0.5 bg-white border border-gray-200 rounded shadow-sm dark:bg-gray-700 dark:border-gray-600">Enter</kbd> to search</span>
+                <span class="flex items-center gap-1"><kbd class="px-1.5 py-0.5 bg-white border border-gray-200 rounded shadow-sm dark:bg-gray-700 dark:border-gray-600">ESC</kbd> to close</span>
+            </div>
+
+        </div>
+    </div>
+</div>  

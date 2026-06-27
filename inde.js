@@ -72,3 +72,5 @@ naber3.textContent++
 minus3.addEventListener("click" , function(){
     naber3.textContent--
 })
+
+
